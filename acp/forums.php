@@ -150,6 +150,17 @@ $lang = array_merge($lang, array(
 	'TYPE_LINK'			=> '連結',
 
 	'UNLOCKED'			=> '未鎖定',
+
+	// wasabi mod
+	'FORUM_LOGO'				=> '版面橫幅',
+	'FORUM_LOGO_EXPLAIN'		=> '顯示於版面列表, 描述上方.',
+	'FORUM_TOPIC_TYPES'			=> '文章類型',
+	'FORUM_TOPIC_TYPES_EXPLAIN'	=> '這是發表文章時可選擇的主題類型, 使用逗號(,)來區隔.',
+	'DEFAULT_TOPIC_TYPES'		=> '[討論],[分享],[問題],[其他]',
+	'FORUM_POSTING_RULES'			=> '版面發文規定',
+	'FORUM_POSTING_RULES_PREVIEW'	=> '版面發文規定預覽',
+	'FORUM_POSTING_RULES_EXPLAIN'	=> '版面發文規定會在發文時顯示.',
+	'FORUM_POSTING_RULES_TOO_LONG'	=> '版面發文規定必須少於 4000 個字元.'
 ));
 
 ?>

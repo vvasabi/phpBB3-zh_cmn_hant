@@ -851,6 +851,25 @@ $lang = array_merge($lang, array(
 	// Translators should change this if a the usual date format is different
 	'default_dateformat'	=> 'Y年 M j日, H:i', // 2007年 1月 1日, 13:37
 
+	// wasabi
+	'CHATROOM_USERS'		=> '聊天室會員：',
+	'NO_CHATROOM_USERS'		=> '沒有會員在聊天室',
+
+	//mod
+	//-- mod : Evil Quick Reply ------------------------------------------------------------
+	//-- add
+	'QUICK_REPLY'			=> '快速回覆',
+	//-- fin mod : Evil Quick Reply --------------------------------------------------------
+	'HOME'					=> '首頁',
+
+	'CODE'					=> '語法',
+	'CHOOSE_CODE'			=> '選擇代碼',
+	'USE_BBCODE'			=> '使用 BBCode',
+	'USE_WIKI'				=> '使用 Wiki 語法',
+	'FORUM_POSTING_RULES'	=> '版面發文規定',
+
+	// add phrases
+	'SPONSOR'				=> '贊助商：'
 ));
 
 ?>

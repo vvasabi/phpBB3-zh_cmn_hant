@@ -217,6 +217,24 @@ $lang = array_merge($lang, array(
 
 	'WRONG_FILESIZE'	=> '檔案太大了，最大允許的檔案大小為 %1d %2s。',
 	'WRONG_SIZE'	=> '圖檔最小限制為寬 %1$d 像素，高 %2$d 像素。最大限制為寬 %3$d 像素，高 %4$d 像素。您送出的圖檔為：寬 %5$d 像素，高 %6$d 像素。',
+
+	// mod
+	'SELECT_TOPIC_TYPE'	=> '主題類型',
+	'DEFINE_TOPIC_TYPE'	=> '您必須為新主題指定一個主題類型.',
+	'DISABLE_CODE'	=> '關閉代碼功能',
+
+	'CODE_IS_OFF'	=> '%s代碼%s <em>禁止</em>使用',
+	'CODE_IS_ON'	=> '%s代碼%s <em>允許</em>使用',
+	'TOPIC_HIDDEN'	=> '將此主題設為隱藏文章',
+	'TOPIC_COLOUR'	=> '主題顏色',
+	'DEFAULT_TOPIC_COLOUR'	=> '預設顏色',
+	'TEXTFIELD_LARGER'	=> '放大文章編輯區',
+	'TEXTFIELD_SMALLER'	=> '縮小文章編輯區',
+	// mod: Topic Colour ----------------------------------
+	// by: wasabi
+	'CHANGE_COLOUR_TO'	=> '將主題顏色轉換成',
+	'POST_TOPIC_COLOUR_AS'	=> '設定主題顏色為',
+	// fin mod : Topic Colour -----------------------------
 ));
 
 ?>

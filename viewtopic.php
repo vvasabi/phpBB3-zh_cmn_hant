@@ -108,6 +108,9 @@ $lang = array_merge($lang, array(
 	'VOTE_SUBMITTED'	=> '您的投票已經送出。',
 	'VOTE_CONVERTED'		=> '為了轉變票選結果而改變投票選項是不被支持的。',
 
+	// wasabi mod
+	'QUICK_REPLY_SUBMIT_TIP'	=> '按Shift+Enter來快速送出.',
+
 ));
 
 ?>

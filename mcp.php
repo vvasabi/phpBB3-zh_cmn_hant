@@ -371,6 +371,28 @@ $lang = array_merge($lang, array(
 			'OTHER'		=> '這篇文章的檢舉原因不包含在已有的項目中，請使用「更多資訊」提供更多相關資訊。'
 		)
 	),
+
+	// wasabi mods
+	// forum config
+	'MCP_MAIN_FORUM_CONFIG'			=> '版面設定',
+	'FORUM_CONFIG'					=> '版面參數設定',
+	'FORUM_CONFIG_UPDATE_SUCCESS'	=> '版面參數設定成功',
+	'FORUM_DESC_EXPLAIN'			=> '任何輸入的 HTML 標籤都會以原貌顯示.',
+	'FORUM_RULES_EXPLAIN'			=> '版面公告將顯示在這個版面的每個頁面.',
+	'PARSE_BBCODE'					=> '可用 BBCode',
+	'PARSE_SMILIES'					=> '可用表情符號',
+	'PARSE_URLS'					=> '可用超連結',
+	'FORUM_LOGO'					=> '版面橫幅',
+	'FORUM_LOGO_EXPLAIN'			=> '顯示於版面列表, 版面簡介上方.',
+	'FORUM_TOPIC_TYPES'				=> '文章類型',
+	'FORUM_TOPIC_TYPES_EXPLAIN'		=> '這是發表文章時可選擇的主題類型, 使用逗號(,)來區隔.',
+	'FORUM_POSTING_RULES_EXPLAIN'	=> '版面發文規定會在發文時顯示.',
+
+	//errors
+	'WARNING'							=> '警告',
+	'FORUM_RULES_TOO_LONG'				=> '版面公告必須少於 4000 個字元.',
+	'FORUM_POSTING_RULES_TOO_LONG'		=> '版面發文規定必須少於 4000 個字元.',
+	'FORUM_DESC_TOO_LONG'				=> '版面描述太長, 它必須少於 4000 個字元.',
 ));
 
 ?>
