@@ -4,7 +4,7 @@
 * install [正體中文]
 *
 * @package language
-* @version $Id: install.php 10101 2009-09-04 14:49:41Z acydburn $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (yoshika, 心靈捕手, 動機不明)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -128,7 +128,7 @@ $lang = array_merge($lang, array(
 	'DB_ERR_QUERY_FIRST_TABLE'	=> '執行 <var>query_first</var> 時發生錯誤：%s (「%s」)。',
 	'DB_ERR_SELECT'				=> '執行 <code>SELECT</code> 語句時發生錯誤。',
 	'DB_HOST'					=> '資料庫伺服器主機名稱或 DSN',
-	'DB_HOST_EXPLAIN'			=> 'DSN 意思是 Data Source Name，它只與安裝 ODBC 有關。',
+	'DB_HOST_EXPLAIN'			=> 'DSN 意思是 Data Source Name，它只與安裝 ODBC 有關。在 PostgreSQL，經由 UNIX 網域插口，使用 localhost 以連接本地伺服器，以及經由 TCP，使用 127.0.0.1 以連接之。對於 SQLite，請輸入到您資料庫檔案的完整路徑。',
 	'DB_NAME'					=> '資料庫名稱',
 	'DB_PASSWORD'				=> '資料庫管理員密碼',
 	'DB_PORT'					=> '資料庫伺服器連接埠',
@@ -147,6 +147,7 @@ $lang = array_merge($lang, array(
 	'DLL_MBSTRING'				=> '多位元組字元支援',
 	'DLL_MSSQL'					=> 'MSSQL Server 2000+',
 	'DLL_MSSQL_ODBC'			=> 'MSSQL Server 2000+ via ODBC',
+	'DLL_MSSQLNATIVE'			=> 'MSSQL Server 2005+ [ Native ]',
 	'DLL_MYSQL'					=> 'MySQL',
 	'DLL_MYSQLI'				=> 'MySQL with MySQLi Extension',
 	'DLL_ORACLE'				=> 'Oracle',
@@ -209,11 +210,12 @@ $lang = array_merge($lang, array(
 
 	<p>phpBB3 支援如下的資料庫：</p>
 	<ul>
-		<li>MySQL 3.23 或更高 (支援MySQLi)</li>
+		<li>MySQL 3.23 或更高 (支援 MySQLi)</li>
 		<li>PostgreSQL 7.3+</li>
 		<li>SQLite 2.8.2+</li>
 		<li>Firebird 2.1+</li>
 		<li>MS SQL Server 2000 或更高（直接訪問或通過 ODBC）</li>
+		<li>MS SQL Server 2005 或更高 (native)</li>
 		<li>Oracle</li>
 	</ul>
 
@@ -557,6 +559,7 @@ $lang = array_merge($lang, array(
 	'UPDATING_DATA'					=> '更新資料',
 	'UPDATING_TO_LATEST_STABLE'		=> '更新資料庫至最新的穩定版本',
 	'UPDATED_VERSION'				=> '已更新的版本',
+	'UPGRADE_INSTRUCTIONS'         => '一項可用的新功能 <strong>%1$s</strong> 已發布。請仔細閱讀 <a href="%2$s" title="%2$s"><strong>發布公告</strong></a> 以瞭解其所提供者，以及如何更新。',
 	'UPLOAD_METHOD'					=> '上傳方式',
 
 	'UPDATE_DB_SUCCESS'				=> '資料庫更新完成。',
@@ -583,16 +586,6 @@ $lang = array_merge($lang, array(
 	'CONFIG_SITENAME'				=> '（您的討論區名稱）',
 
 	'DEFAULT_INSTALL_POST'			=> '這是在您安裝 phpBB3 後的一篇範例文章。似乎一切事情都可正常運作。如果您喜歡，那麼您可以刪除這篇文章以及繼續設定您的論壇。在安裝的過程中，您的第一個分區和第一個版面，被指派了一個適當的版面權限設定，其包含的預設會員群組有管理員、機器人、全域版主、訪客、註冊會員、以及註冊 COPPA 會員等。如果您也選擇要刪除您的第一個分區和第一個版面，那麼不要忘記指派版面權限到所有您新建的分區以及版面。當您要新建分區以及版面時，建議重新命名您的第一個分區和第一個版面，以及複製其版面權限。祝您使用愉快！',
-
-	'EXT_GROUP_ARCHIVES'			=> '壓縮檔',
-	'EXT_GROUP_DOCUMENTS'			=> '文件檔',
-	'EXT_GROUP_DOWNLOADABLE_FILES'	=> '可下載的檔案',
-	'EXT_GROUP_FLASH_FILES'			=> 'Flash 檔案',
-	'EXT_GROUP_IMAGES'				=> '圖片檔',
-	'EXT_GROUP_PLAIN_TEXT'			=> '純文字檔',
-	'EXT_GROUP_QUICKTIME_MEDIA'		=> 'Quicktime 多媒體檔',
-	'EXT_GROUP_REAL_MEDIA'			=> 'Real Media 多媒體檔',
-	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media 多媒體檔',
 
 	'FORUMS_FIRST_CATEGORY'			=> '您的第一個分區',
 	'FORUMS_TEST_FORUM_DESC'		=> '您的第一個版面描述。',

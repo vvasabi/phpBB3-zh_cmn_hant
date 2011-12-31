@@ -4,7 +4,7 @@
 * acp_forums [正體中文]
 *
 * @package language
-* @version $Id: forums.php 9896 2009-07-31 12:46:15Z Kellanved $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -66,7 +66,7 @@ $lang = array_merge($lang, array(
 	'ENABLE_POST_REVIEW'			=> '能夠使用預覽文章',
 	'ENABLE_POST_REVIEW_EXPLAIN'	=> '如果設定為是，當會員在編寫新的文章時，可以預覽他們的文章。這功能在聊天版面中應該停用。',
 	'ENABLE_QUICK_REPLY'			=> '啟用快速回覆',
-	'ENABLE_QUICK_REPLY_EXPLAIN'	=> '如果設定為是，那麼使用者將可以在此版面看見快速回覆盒。即使在這裡設定為是，如果全域的快速回覆選項停用，或者是該版面不能發文，那麼快速回覆盒還是不能顯示。',
+	'ENABLE_QUICK_REPLY_EXPLAIN'	=> '在這個版面啟用快速回覆。如果整個論壇禁用快速回覆，那麼這個設定是無效的。只有在這個版面有發文權限的使用者，才可以使用快速回覆。',
 	'ENABLE_RECENT'					=> '顯示最近討論的主題',
 	'ENABLE_RECENT_EXPLAIN'			=> '如果設定為是，那麼這個版面的主題，將顯示在最近討論的主題列表中。',
 	'ENABLE_TOPIC_ICONS'			=> '能夠使用主題圖示',
@@ -99,7 +99,7 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_EXPLAIN'			=> '使用權限系統指定訪問這個版面的密碼。',
 	'FORUM_PASSWORD_UNSET'				=> '移除版面密碼',
 	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> '如果您要移除版面密碼，那麼請檢查這裡。',
-	'FORUM_PASSWORD_OLD'				=> '這個版面密碼是舊的，應該要改變一下。',
+	'FORUM_PASSWORD_OLD'				=> '這個版面密碼目前是使用舊的加密方式，應該進行變更。',
 	'FORUM_PASSWORD_MISMATCH'			=> '您輸入的密碼不對。',
 	'FORUM_PRUNE_SETTINGS'				=> '版面刪除設定',
 	'FORUM_RESYNCED'					=> '版面「%s」已經完成同步化',

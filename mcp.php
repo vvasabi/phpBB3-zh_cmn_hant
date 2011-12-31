@@ -4,7 +4,7 @@
 * mcp [正體中文]
 *
 * @package language
-* @version $Id: mcp.php 9854 2009-07-25 18:06:25Z naderman $
+* @version $Id: mcp.php 10455 2010-01-26 14:06:00Z nickvergessen $
 * @copyright (c) 2001 - 2007 phpBB TW Group (Mac)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -209,9 +209,8 @@ $lang = array_merge($lang, array(
 	'MCP_WARN_POST'			=> '警告特定文章',
 	'MCP_WARN_USER'			=> '警告會員',
 
-	'MERGE_POSTS'			=> '合併文章',
 	'MERGE_POSTS_CONFIRM'	=> '您確定要合併這些文章嗎？',
-	'MERGE_TOPIC_EXPLAIN'	=> '您可以使用下列表格把選擇的文章合併到另一個主題中。這些文章將不會經過重新排序，就像這些文章由會員們發表在新主題一樣的方式呈現。<br />請輸入目標主題的識別編號 (ID) 或是點選「選擇主題」來搜尋您想要的主題。',
+	'MERGE_TOPIC_EXPLAIN'	=> '您可以使用下列表格把選擇的文章合併到另一個主題中。這些文章將自主題中分割，以及合併到其他的主題中。這些文章將不會經過重新排序，就像這些文章由會員們發表在新主題一樣的方式呈現。<br />請輸入目標主題的識別編號 (ID) 或是點選「選擇主題」來搜尋您想要的主題。',
 	'MERGE_TOPIC_ID'		=> '目標主題的識別編號 (ID)',
 	'MERGE_TOPICS'			=> '合併主題',
 	'MERGE_TOPICS_CONFIRM'	=> '您確定要合併這些主題嗎？',
@@ -253,6 +252,8 @@ $lang = array_merge($lang, array(
 	'PM_REPORT_DELETED_SUCCESS'	=> '選擇的 PM 檢舉已經成功刪除。',
 	'PM_REPORTED_SUCCESS'		=> '這 PM 已被成功檢舉。',
 	'PM_REPORT_TOTAL'			=> '總共有 <strong>1</strong> 個 PM 檢舉需要處理。',
+	'PM_REPORTS_CLOSED_SUCCESS'	=> '選擇的 PM 檢舉已經成功結案。',
+	'PM_REPORTS_DELETED_SUCCESS'=> '選擇的 PM 檢舉已經成功刪除。',
 	'PM_REPORTS_TOTAL'			=> '總共有 <strong>%d</strong> 個 PM 檢舉需要處理。',
 	'PM_REPORTS_ZERO_TOTAL'		=> '沒有 PM 檢舉需要處理。',
 	'PM_REPORT_DETAILS'			=> 'PM 檢舉細節',
@@ -327,6 +328,7 @@ $lang = array_merge($lang, array(
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> '您確定要把選擇的文章與之後的所有文章從原來的主題中分割出來嗎？',
 	'SPLIT_TOPIC_EXPLAIN'				=> '您可以使用這個表格把主題分割為二，您可以選擇要分割的文章或是從選擇的文章開始分割。',
 
+	'THIS_PM_IP'				=> '這個私人訊息的 IP 位址',
 	'THIS_POST_IP'				=> '這篇文章的 IP 位址',
 	'TOPICS_APPROVED_SUCCESS'	=> '這些主題已經成功核准。',
 	'TOPICS_DELETED_SUCCESS'	=> '這些主題已經成功刪除。',

@@ -4,7 +4,7 @@
 * acp_common [正體中文]
 *
 * @package language
-* @version $Id: common.php 10134 2009-09-10 15:32:16Z marshalrusty $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (動機不明, 心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -126,7 +126,7 @@ $lang = array_merge($lang, array(
 	'ACP_MODULE_MANAGEMENT'		=> '模組管理',
 	'ACP_MOD_LOGS'				=> '版主記錄',
 	'ACP_MOD_ROLES'				=> '版主角色',
-	
+
 	'ACP_NO_ITEMS'				=> '還沒有細目。',
 
 	'ACP_ORPHAN_ATTACHMENTS'	=> '幽靈的附加檔案',
@@ -190,7 +190,7 @@ $lang = array_merge($lang, array(
 	'ACP_USER_SIG'					=> '簽名檔',
 	'ACP_USER_WARNINGS'				=> '警告',
 
-	'ACP_VC_SETTINGS'					=> 'CAPTCHA 模組設定',
+       'ACP_VC_SETTINGS'               => '廣告機器人的反制',
 	'ACP_VC_CAPTCHA_DISPLAY'			=> 'CAPTCHA 圖片預覽',
 	'ACP_VERSION_CHECK'					=> '檢查更新',
 	'ACP_VIEW_ADMIN_PERMISSIONS'		=> '檢視管理員權限',
@@ -255,7 +255,7 @@ $lang = array_merge($lang, array(
 	'MOVE_UP'				=> '往上移動',
 
 	'NOTIFY'				=> '通知',
-	'NO_ADMIN'				=> '您沒有權限可以進入管理員控制台。',
+	'NO_ADMIN'				=> '您沒有權限可以管理這個論壇。',
 	'NO_EMAILS_DEFINED'		=> '沒有找到有效的 e-mail 位址。',
 	'NO_PASSWORD_SUPPLIED'	=> '要進入管理員控制台，您需要輸入您的密碼。',	
 
@@ -267,7 +267,6 @@ $lang = array_merge($lang, array(
 	'PARSE_URLS'						=> '可用超連結',
 	'PERMISSIONS_TRANSFERRED'			=> '權限轉移',
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> '您目前擁有來自 %1$s 的權限。您可以使用該會員的權限瀏覽討論區但是無法進入管理員控制台因為管理員的權限無法被轉移。您隨時都可以 <a href="%2$s"><strong>恢復您的權限設定</strong></a>。',
-	'PIXEL'								=> '像素',	
 	'PROCEED_TO_ACP'					=> '%s進入 ACP%s',
 
 	'REMIND'							=> '提醒',
@@ -281,6 +280,7 @@ $lang = array_merge($lang, array(
 	'SETTING_TOO_BIG'		=> '您所提供的值「%1$s」太高。允許最大的值是 %2$d。',
 	'SETTING_TOO_LONG'		=> '您所提供的值「%1$s」太長。允許最大的長度是 %2$d。',
 	'SETTING_TOO_SHORT'		=> '您所提供的值「%1$s」太短。允許最小的長度是 %2$d。',
+
 	'SHOW_ALL_OPERATIONS'	=> '顯示所有的操作',
 
 	'UCP'					=> '會員控制台 (UCP)',
@@ -338,6 +338,8 @@ $lang = array_merge($lang, array(
 	'NUMBER_TOPICS'		=> '主題數量',
 	'NUMBER_USERS'		=> '會員數量',
 	'NUMBER_ORPHAN'		=> '幽靈的附加檔案',
+
+	'PHP_VERSION_OLD'	=> '您伺服器中的 PHP 版本將不再被未來的 phpBB 版本支援。%s詳細情形%s',
 
 	'POSTS_PER_DAY'		=> '每天的發表文章',
 
@@ -501,7 +503,7 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_SERVER'			=> '<strong>已更改伺服器設定</strong>',
 	'LOG_CONFIG_SETTINGS'		=> '<strong>已更改討論區設定</strong>',
 	'LOG_CONFIG_SIGNATURE'		=> '<strong>已更改簽名檔設定</strong>',
-	'LOG_CONFIG_VISUAL'			=> '<strong>已更改確認代碼設定</strong>',
+       'LOG_CONFIG_VISUAL'         => '<strong>已更改反廣告機器人的設定</strong>',
 
 	'LOG_APPROVE_TOPIC'			=> '<strong>已核准主題</strong><br />» %s',
 	'LOG_BUMP_TOPIC'			=> '<strong>已推文主題</strong><br />» %s',

@@ -4,7 +4,7 @@
 * ucp [正體中文]
 *
 * @package language
-* @version $Id: ucp.php 10138 2009-09-11 14:38:23Z Kellanved $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (Mac)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -119,6 +119,7 @@ $lang = array_merge($lang, array(
 	'CANNOT_REMOVE_FOLDER'   => '這個資料夾能被移除。',
 	'CHANGE_DEFAULT_GROUP'   => '更換預設群組',
 	'CHANGE_PASSWORD'   => '更換密碼',
+	'CLICK_GOTO_FOLDER'			=> '%1$s前往您的「%3$s」資料夾%2$s',
 	'CLICK_RETURN_FOLDER'   => '%1$s回到您的「%3$s」資料夾%2$s',
 	'CONFIRMATION'   => '註冊確認',
 	'CONFIRM_CHANGES'   => '確認修改',
@@ -194,6 +195,7 @@ $lang = array_merge($lang, array(
 	'FIELD_INVALID_CHARS_ALPHA_ONLY'   => '欄位「%s」包含無效字元，只允許填入英文字母與數字。',
 	'FIELD_INVALID_CHARS_SPACERS_ONLY'   => '欄位「%s」包含無效字元，只允許填入英文字母與數字、空格和 -+_[] 這些特殊字元。',
 	'FIELD_INVALID_DATE'   => '欄位「%s」包含無效日期。',
+	'FIELD_INVALID_VALUE'				=> '欄位「%s」有一個無效的值。',
 
 	'FOE_MESSAGE'   => '來自黑名單會員的訊息',
 	'FOES_EXPLAIN'   => '黑名單的會員是您想要忽略會員。這些會員所發表的文章將不會被您完全的看到。您仍然可以接收來自他們的私人訊息。請注意，您不能把管理員和版面管理員加入黑名單中。',
@@ -460,6 +462,7 @@ $lang = array_merge($lang, array(
 	'UCP_ZEBRA'   => '好友 &amp; 黑名單',
 	'UCP_ZEBRA_FOES'   => '管理黑名單',
 	'UCP_ZEBRA_FRIENDS'   => '管理好友',
+	'UNDISCLOSED_RECIPIENT'			=> '不公開的收件人',
 	'UNKNOWN_FOLDER'   => '未知資料夾',
 	'UNWATCH_MARKED'   => '停止訂閱',
 	'UPLOAD_AVATAR_FILE'   => '從您的電腦上傳頭像圖檔',
