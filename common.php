@@ -4,7 +4,7 @@
 * common [正體中文]
 *
 * @package language
-* @version $Id: common.php 10441 2010-01-25 15:57:10Z nickvergessen $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (yoshika, 心靈捕手, 動機不明)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -124,7 +124,7 @@ $lang = array_merge($lang, array(
 	'COMMA_SEPARATOR'	=> '，',
 	'CONFIRM'	=> '確認',
 	'CONFIRM_CODE'	=> '確認代碼',
-	'CONFIRM_CODE_EXPLAIN'	=> '請正確輸入它所顯示的代碼，不必區分大小寫，而且沒有數字「0」。',
+	'CONFIRM_CODE_EXPLAIN'   => '請正確輸入它所顯示的代碼，不必區分大小寫。',
 	'CONFIRM_CODE_WRONG'	=> '您輸入的確認代碼有誤。',
 	'CONFIRM_OPERATION'	=> '您確認要執行這個操作嗎？',
 	'CONGRATULATIONS'	=> '恭喜您',
@@ -295,6 +295,7 @@ $lang = array_merge($lang, array(
 	'LAST_VISIT'	=> '最後訪問',
 	'LDAP_NO_LDAP_EXTENSION'	=> 'LDAP 模組無法使用。',
 	'LDAP_NO_SERVER_CONNECTION'	=> '無法連線到 LDAP 伺服器。',
+	'LDAP_SEARCH_FAILED'            => '當搜尋 LDAP 目錄時發生錯誤。',
 	'LEGEND'	=> '顏色說明',
 	'LOCATION'	=> '來自',
 	'LOCK_POST'	=> '鎖定文章',
@@ -303,8 +304,8 @@ $lang = array_merge($lang, array(
 	'LOGIN'	=> '登入',
 	'LOGIN_CHECK_PM'	=> '登入檢查您的私人訊息。',
 	'LOGIN_CONFIRMATION'	=> '登入確認',
-	'LOGIN_CONFIRM_EXPLAIN'	=> '為了防止暴力破解會員密碼，管理員將會要求您在超過最大嘗試登入次數後輸入一組確認代碼，確認代碼顯示在如下所示的圖檔中。如果您有視覺相關問題因而無法瀏覽判斷時，請聯絡 %s管理員%s。',
-	'LOGIN_ERROR_ATTEMPTS'	=> '您的登入錯誤超過了討論區設定的嘗試次數上限。現在除了輸入您的會員名稱和密碼外，還需要輸入下圖所示的確認代碼。',
+	'LOGIN_CONFIRM_EXPLAIN'            => '為了防止暴力破解會員帳號，論壇將會要求您在超過最大嘗試登入次數後輸入一組確認代碼，確認代碼顯示在如下所示的圖檔中。如果您有視覺相關問題因而無法瀏覽判斷時，請聯絡 %s論壇管理員%s。', // 不使用的
+	'LOGIN_ERROR_ATTEMPTS'            => '您的登入錯誤，超過了討論區設定的嘗試次數上限。現在除了輸入您的會員名稱和密碼外，還需要解決底下的 CAPTCHA。',
 	'LOGIN_ERROR_EXTERNAL_AUTH_APACHE'	=> '您的瀏覽未獲 Apache 伺服器授權。',
 	'LOGIN_ERROR_PASSWORD'	=> '您輸入了一個無效的密碼。請確認後重新嘗試登入。如果問題依舊存在請聯絡 %s管理員%s。',
 	'LOGIN_ERROR_PASSWORD_CONVERT'	=> '在討論區升級中無法轉換您的密碼。請 %s申請一個新密碼%s。如果您還遇到其他的問題，請聯絡 %s管理員%s。',
@@ -346,8 +347,8 @@ $lang = array_merge($lang, array(
 	'NEW_MESSAGES'	=> '新訊息',
 	'NEW_PM'	=> '<strong>%d</strong> 個新訊息',
 	'NEW_PMS'	=> '<strong>%d</strong> 個新訊息',
-	'NEW_POST'	=> '有新文章',
-	'NEW_POSTS'	=> '有新文章',
+	'NEW_POST'               => '有新文章',   // 不再使用
+	'NEW_POSTS'               => '有新文章',   // 不再使用
 	'NEXT'	=> '下一頁',
 	'NEXT_STEP'	=> '下一步',
 	'NEVER'	=> '從未',
@@ -380,7 +381,7 @@ $lang = array_merge($lang, array(
 	'NO_MODERATORS'	=> '沒有版主。',
 	'NO_NEW_MESSAGES'	=> '沒有新的訊息',
 	'NO_NEW_PM'	=> '<strong>0</strong> 個新訊息',
-	'NO_NEW_POSTS'	=> '無新文章',
+	'NO_NEW_POSTS'            => '無新文章',   // 不再使用
 	'NO_ONLINE_USERS'	=> '沒有註冊會員',
 	'NO_POSTS'	=> '沒有文章',
 	'NO_POSTS_TIME_FRAME'	=> '在選定的時段中這個主題沒有文章存在。',
@@ -394,6 +395,7 @@ $lang = array_merge($lang, array(
 	'NO_TOPICS'	=> '這個版面還沒有主題或文章。',
 	'NO_TOPICS_TIME_FRAME'	=> '在選定的時段中這個版面沒有主題存在。',
 	'NO_UNREAD_PM'	=> '<strong>0</strong> 個未讀訊息',
+       'NO_UNREAD_POSTS'         => '沒有未閱讀文章',
 	'NO_UPLOAD_FORM_FOUND'	=> '上傳已經開始，但是沒有有效的上傳檔案表單。',
 	'NO_USER'	=> '該會員不存在。',
 	'NO_USERS'	=> '該會員不存在。',
@@ -420,6 +422,7 @@ $lang = array_merge($lang, array(
 	'PIXEL'					=> '像素',
 	'PLAY_QUICKTIME_FILE'	=> '播放 Quicktime 檔案',
 	'PM'					=> 'PM',
+	'PM_REPORTED'         => '點選以查看檢舉',
 	'POSTING_MESSAGE'	=> '發表訊息於 %s',
 	'POSTING_PRIVATE_MESSAGE'	=> '編寫私人訊息',
 	'POST'	=> '文章',
@@ -563,6 +566,9 @@ $lang = array_merge($lang, array(
 	'TEST_CONNECTION'	=> '連結測試',
 	'THE_TEAM'	=> '管理團隊',
 	'TIME'	=> '時間',
+	
+	'TOO_LARGE'                  => '您輸入的值太大。',
+	'TOO_LARGE_MAX_RECIPIENTS'      => '這個 <strong>每個私人訊息所允許的最大收件人數</strong> 設定，您輸入的值太大。',
 
 	'TOO_LONG'						=> '您輸入的數值太長。',
 
@@ -606,6 +612,9 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_WEBSITE'	=> '您輸入的網站位址太短了。',
 	'TOO_SHORT_YIM'	=> '您輸入的 Yahoo！ Messenger 會員名稱太短了。',
 
+	'TOO_SMALL'                  => '您輸入的值太小。',
+	'TOO_SMALL_MAX_RECIPIENTS'      => '這個 <strong>每個私人訊息所允許的最大收件人數</strong> 設定，您輸入的值太小。',
+
 	'TOPIC'	=> '主題',
 	'TOPICS'	=> '主題',
 	'TOPICS_UNAPPROVED'	=> '在這論壇至少有一個主題沒有被核准。',
@@ -639,6 +648,8 @@ $lang = array_merge($lang, array(
 	'UNREAD_MESSAGES'	=> '未讀訊息',
 	'UNREAD_PM'	=> '<strong>%d</strong> 個未讀訊息',
 	'UNREAD_PMS'	=> '<strong>%d</strong> 個未讀訊息',
+	'UNREAD_POST'         => '未閱讀文章',
+	'UNREAD_POSTS'         => '未閱讀文章',
 	'UNWATCHED_FORUMS'	=> '您將不再訂閱這些選取的版面。',
 	'UNWATCHED_TOPICS'	=> '您將不再訂閱這些選取的主題。',
 	'UNWATCHED_FORUMS_TOPICS'	=> '您將不再訂閱這些選取的文章。',

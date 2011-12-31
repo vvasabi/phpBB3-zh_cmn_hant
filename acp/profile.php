@@ -4,7 +4,7 @@
 * acp_profile [正體中文]
 *
 * @package language
-* @version $Id: profile.php 9916 2009-08-03 15:46:56Z Kellanved $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

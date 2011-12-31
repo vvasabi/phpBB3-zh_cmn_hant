@@ -4,7 +4,7 @@
 * acp_forums [正體中文]
 *
 * @package language
-* @version $Id: forums.php 10531 2010-02-23 23:50:36Z naderman $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -99,7 +99,7 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_EXPLAIN'			=> '使用權限系統指定訪問這個版面的密碼。',
 	'FORUM_PASSWORD_UNSET'				=> '移除版面密碼',
 	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> '如果您要移除版面密碼，那麼請檢查這裡。',
-	'FORUM_PASSWORD_OLD'				=> '這個版面密碼是使用舊的加密方式，應該要改變一下。',
+	'FORUM_PASSWORD_OLD'				=> '這個版面密碼目前是使用舊的加密方式，應該進行變更。',
 	'FORUM_PASSWORD_MISMATCH'			=> '您輸入的密碼不對。',
 	'FORUM_PRUNE_SETTINGS'				=> '版面刪除設定',
 	'FORUM_RESYNCED'					=> '版面「%s」已經完成同步化',

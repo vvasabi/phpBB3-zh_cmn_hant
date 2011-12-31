@@ -4,7 +4,7 @@
 * acp_permissions [正體中文]
 *
 * @package language
-* @version $Id: permissions.php 10017 2009-08-18 14:37:49Z bantu $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

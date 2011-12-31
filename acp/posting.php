@@ -4,7 +4,7 @@
 * acp_posting [正體中文]
 *
 * @package language
-* @version $Id: posting.php 10517 2010-02-21 11:35:45Z Kellanved $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

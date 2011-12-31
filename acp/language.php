@@ -4,7 +4,7 @@
 * acp_language [正體中文]
 *
 * @package language
-* @version $Id: language.php 9649 2009-06-21 19:17:20Z bantu $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

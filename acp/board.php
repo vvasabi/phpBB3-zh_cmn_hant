@@ -4,7 +4,7 @@
 * acp_board [正體中文]
 *
 * @package language
-* @version $Id: board.php 10554 2010-02-28 19:20:23Z naderman $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -50,7 +50,8 @@ $lang = array_merge($lang, array(
 	'SITE_DESC'						=> '討論區描述',
 	'SITE_NAME'						=> '討論區名稱',
 	'SYSTEM_DST'					=> '開啟日光節約時間/<abbr title="Daylight Saving Time">DST (Daylight Saving Time)</abbr>',
-	'SYSTEM_TIMEZONE'				=> '系統時區',
+	'SYSTEM_TIMEZONE'            => '訪客時區',
+	'SYSTEM_TIMEZONE_EXPLAIN'         => '此時區用來顯示時間給尚未登入的使用者（訪客、機器人）。已登入的使用者可以經由註冊時以及進入會員控制台去設定他們自己的時區。',
 	'WARNINGS_EXPIRE'				=> '警告持續',
 	'WARNINGS_EXPIRE_EXPLAIN'		=> '幾天後這份警告將到期，並從會員的記錄中自動消失。',
 ));
@@ -73,8 +74,8 @@ $lang = array_merge($lang, array(
 	'ALLOW_PM_REPORT'			=> '允許會員檢舉私人訊息',
 	'ALLOW_PM_REPORT_EXPLAIN'	=> '如果啟用，那麼會員將有檢舉他們已接收私人訊息或傳送給論壇版主的選項。這些私人訊息將會顯示在 MCP 中。',
 	'ALLOW_QUICK_REPLY'			=> '允許快速回覆',
-	'ALLOW_QUICK_REPLY_EXPLAIN'	=> '這個設定允許在整個論壇禁用快速回覆。當啟用時，版面特殊的設定將決定快速回覆是否顯示於個別的版面。',
-	'ALLOW_QUICK_REPLY_BUTTON'	=> '在所有的版面啟用快速回覆。',
+	'ALLOW_QUICK_REPLY_EXPLAIN'	=> '這個設定允許在整個論壇禁用快速回覆。當啟用時，版面個別設定將決定快速回覆是否顯示於個別的版面。',
+	'ALLOW_QUICK_REPLY_BUTTON'	=> '在所有的版面啟用快速回覆',
 	'ALLOW_SIG'					=> '允許使用簽名檔',
 	'ALLOW_SIG_BBCODE'			=> '允許在會員簽名檔中使用 BBCode',
 	'ALLOW_SIG_FLASH'			=> '允許在會員簽名檔中使用 <code>[FLASH]</code> 的 BBCode 標籤',
@@ -85,7 +86,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_SMILIES'				=> '允許使用表情符號',
 	'ALLOW_TOPIC_NOTIFY'		=> '允許訂閱主題',
 	'BOARD_PM'					=> '私人訊息',
-	'BOARD_PM_EXPLAIN'			=> '開啟或關閉所有的會員使用私人訊息。',
+	'BOARD_PM_EXPLAIN'         => '開啟所有的會員使用私人訊息。',
 ));
 
 // Avatar Settings
@@ -176,8 +177,8 @@ $lang = array_merge($lang, array(
 	'MIN_CHAR_LIMIT_EXPLAIN'		=> '每篇文章/私訊所允許發表的字元下限。',
 	'POSTING'						=> '發表中',
 	'POSTS_PER_PAGE'				=> '每頁顯示文章數',
-	'QUOTE_DEPTH_LIMIT'				=> '每篇文章中的最多引言',
-	'QUOTE_DEPTH_LIMIT_EXPLAIN'		=> '在一篇文章中允許的最多引言數量。設定為 0，表示沒有限制。',
+	'QUOTE_DEPTH_LIMIT'            => '引言的最多層數',
+	'QUOTE_DEPTH_LIMIT_EXPLAIN'      => '在一篇文章中允許之引言的最多層數。設定為 0，表示沒有限制。',
 	'SMILIES_LIMIT'					=> '每篇文章中的最多表情符號',
 	'SMILIES_LIMIT_EXPLAIN'			=> '在一篇文章中允許的最多表情符號數量。設定為 0，表示沒有限制。',
 	'SMILIES_PER_PAGE'				=> '每頁表情符號數',
@@ -211,7 +212,7 @@ $lang = array_merge($lang, array(
 	'NEW_MEMBER_POST_LIMIT'			=> '新會員文章限制',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> '新會員直到他們達到此文章數之前，都是在 <em>新註冊會員</em> 群組之內。您可以使用這個群組去抑制他們使用私訊或檢視他們的文章。<strong>設定 0 表示停用此功能。</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> '預設為新註冊會員群組',
-	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> '如果設定為是，那麼「新會員文章限制」不只是將新註冊會員放進 <em>新註冊會員</em> 群組，而且該群組將是他們的預設會員群組。如果您想要指派一個有預設等級 和/或 頭像的群組供新會員繼承，那麼這也許會派上用場。',
+	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'   => '如果設定為是，而且「新會員文章限制」已明確指定，那麼不只是將新註冊會員放進 <em>新註冊會員</em> 群組，而且該群組將是他們的預設會員群組。如果您想要指派一個有預設等級 和/或 頭像的群組供新會員繼承，那麼這也許會派上用場。',
 
 	'ACC_ADMIN'					=> '由管理員',
 	'ACC_DISABLE'				=> '停止',
@@ -232,7 +233,7 @@ $lang = array_merge($lang, array(
 	'PASSWORD_LENGTH'			=> '密碼長度',
 	'PASSWORD_LENGTH_EXPLAIN'	=> '密碼的最少和最多字元數量。',
 	'REG_LIMIT'					=> '註冊嘗試次數',
-	'REG_LIMIT_EXPLAIN'			=> '會員在被暫停註冊前的確認代碼嘗試次數。',
+	'REG_LIMIT_EXPLAIN'         => '為解決反廣告機器人的任務，會員在被鎖定 session 前的確認代碼嘗試次數。',
 	'USERNAME_ALPHA_ONLY'		=> '只能英文字母，數字',
 	'USERNAME_ALPHA_SPACERS'	=> '英文字母，數字和空格',
 	'USERNAME_ASCII'			=> 'ASCII (非萬國碼)',
@@ -248,17 +249,17 @@ $lang = array_merge($lang, array(
 // Feeds
 $lang = array_merge($lang, array(
 	'ACP_FEED_MANAGEMENT'				=> '一般消息來源設定',
-	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> '這個模組使用各種有效的 ATOM 消息來源，解析任何文章中的 BBCode，使它們可以在外部的消息來源中被閱讀。',
+	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> '這個模組可產生多種 ATOM 消息來源，並解析文章中的 BBCode，使它們可以在外部的消息來源中被閱讀。',
 
 	'ACP_FEED_GENERAL'					=> '一般消息來源設定',
-	'ACP_FEED_POST_BASED'				=> '基本的文章之消息來源設定',
-	'ACP_FEED_TOPIC_BASED'				=> '基本的主題之消息來源設定',
+	'ACP_FEED_POST_BASED'				=> '文章形式的消息來源設定',
+	'ACP_FEED_TOPIC_BASED'				=> '主題形式的消息來源設定',
 	'ACP_FEED_SETTINGS_OTHER'			=> '其他的消息來源與設定',
 
 	'ACP_FEED_ENABLE'					=> '啟用消息來源',
 	'ACP_FEED_ENABLE_EXPLAIN'			=> '開啟或關閉整個論壇的 ATOM 消息來源。<br />無論底下的選項設定為何，停用這個將關閉所有的消息來源。',
 	'ACP_FEED_LIMIT'					=> '項目數量',
-	'ACP_FEED_LIMIT_EXPLAIN'			=> '消息來源項目所要顯示的最大數量。',
+	'ACP_FEED_LIMIT_EXPLAIN'			=> '消息來源項目所顯示的最大數量。',
 
 	'ACP_FEED_OVERALL'					=> '啟用整個論壇之消息來源',
 	'ACP_FEED_OVERALL_EXPLAIN'			=> '整個論壇之新的文章。',
@@ -274,11 +275,11 @@ $lang = array_merge($lang, array(
 	'ACP_FEED_NEWS'						=> '新聞之消息來源',
 	'ACP_FEED_NEWS_EXPLAIN'				=> '自這些版面中拉出第一篇文章。沒有選擇版面將停用此功能。<br />以按住 <samp>CTRL</samp> 以及點選來選擇多個版面。',
 
-	'ACP_FEED_OVERALL_FORUMS'			=> '啟用版面之消息來源',
-	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> '啟用「所有的版面」之消息來源，將顯示版面的列表。',
+	'ACP_FEED_OVERALL_FORUMS'			=> '啟用所有版面之消息來源',
+	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> '啟用「所有版面」之消息來源，將顯示所有版面的列表。',
 
 	'ACP_FEED_HTTP_AUTH'				=> '允許 HTTP 驗證',
-	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> '啟用 HTTP 驗證，將使用 <samp>auth=http</samp> 參數在消息來源的網址，以允許會員們去接收訪客所無法瀏覽的內容。請注意！在 .htaccess 檔案中，一些 PHP 設定需要額外的改變。詳細的說明可以在那個檔案中找到。',
+	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> '啟用 HTTP 驗證，將使用 <samp>auth=http</samp> 參數在消息來源的網址，以允許會員們去接收訪客所無法瀏覽的內容。請注意！在 .htaccess 檔案中，一些 PHP 設定需要額外的改變。詳細的說明可以在該檔案中找到。',
 	'ACP_FEED_ITEM_STATISTICS'			=> '項目統計',
 	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> '下面的消息來源顯示個別的項目統計<br />(例如：發表者、日期與時間、回覆數、觀看數)',
 	'ACP_FEED_EXCLUDE_ID'				=> '排除這些版面',
@@ -287,44 +288,44 @@ $lang = array_merge($lang, array(
 
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
-	'ACP_VC_SETTINGS_EXPLAIN'				=> '在這裡，您可以選擇以及設定 CAPTCHA 外掛，它們將以各種不同的方法拒絕所謂的廣告機器人嘗試註冊。',
-	'AVAILABLE_CAPTCHAS'					=> '有用的外掛',
-	'CAPTCHA_UNAVAILABLE'					=> '這 CAPTCHA 不能選擇，因為它沒有所需的要件。',
-	'CAPTCHA_GD'							=> 'GD CAPTCHA',
-	'CAPTCHA_GD_3D'							=> 'GD 3D Captcha',
-	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'GD CAPTCHA 前景干擾',
-	'CAPTCHA_GD_EXPLAIN'					=> '使用 GD 去產生更進階的 CAPTCHA。',
-	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> '使用前景干擾去產生基於 GD 而較堅固的 CAPTCHA。',
-	'CAPTCHA_GD_X_GRID'						=> 'GD CAPTCHA X 軸背景干擾',
-	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> '使用這種較低的設定去產生基於 GD 而較堅固的 CAPTCHA。設定 0 將停用 X 軸背景干擾。',
-	'CAPTCHA_GD_Y_GRID'						=> 'GD CAPTCHA Y 軸背景干擾',
-	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> '使用這種較低的設定去產生基於 GD 而較堅固的 CAPTCHA。設定 0 將停用 Y 軸背景干擾。',
-	'CAPTCHA_GD_WAVE'						=> 'GD CAPTCHA 波形扭曲',
-	'CAPTCHA_GD_WAVE_EXPLAIN'				=> '將波形扭曲的功能加入 CAPTCHA 中。',
-	'CAPTCHA_GD_3D_NOISE'					=> '增加 3D 干擾物',
-	'CAPTCHA_GD_3D_NOISE_EXPLAIN'			=> '增加額外的物體到 CAPTCHA 中，覆蓋原來的字。',
-	'CAPTCHA_GD_FONTS'						=> '使用不同的字體',
-	'CAPTCHA_GD_FONTS_EXPLAIN'				=> '此設定控制許多不同的已使用之字體。您只可以使用預設字體或介紹已改變的字體。增加小寫字體也是可行的。',
-	'CAPTCHA_FONT_DEFAULT'					=> '預設字體',
-	'CAPTCHA_FONT_NEW'						=> '新的字體',
-	'CAPTCHA_FONT_LOWER'					=> '也有小寫',
-	'CAPTCHA_NO_GD'							=> 'CAPTCHA 沒有 GD',
-	'CAPTCHA_PREVIEW_MSG'					=> '您所改變的確認代碼設定尚未儲存，這只是預覽。',
-	'CAPTCHA_PREVIEW_EXPLAIN'				=> '使用目前選擇的確認代碼，看起來就像這個樣子。',
+	'ACP_VC_SETTINGS_EXPLAIN'            => '在這裡，您可以選擇以及設定 CAPTCHA 外掛，其目的是為了阻止灌水惡意程式之自動表單提交。這些外掛的一般性工作為使用 <em>CAPTCHA</em> 來挑戰使用者，目的是提供電腦難以解決的測試。',
+	'AVAILABLE_CAPTCHAS'               => '有用的外掛',
+	'CAPTCHA_UNAVAILABLE'               => '這 CAPTCHA 不能選擇，因為它沒有所需的要件。',
+	'CAPTCHA_GD'                     => 'GD 圖片',
+	'CAPTCHA_GD_3D'                     => 'GD 3D 圖片',
+	'CAPTCHA_GD_FOREGROUND_NOISE'         => '前景干擾',
+	'CAPTCHA_GD_EXPLAIN'               => '使用 GD 去產生更進階的反廣告機器人之圖片。',
+	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'   => '使用前景干擾去產生較難以閱讀的圖片。',
+	'CAPTCHA_GD_X_GRID'                  => 'X 軸背景干擾',
+	'CAPTCHA_GD_X_GRID_EXPLAIN'            => '使用這種較低的設定去產生較難以閱讀的圖片。設定 0 將停用 X 軸背景干擾。.',
+	'CAPTCHA_GD_Y_GRID'                  => 'Y 軸背景干擾',
+	'CAPTCHA_GD_Y_GRID_EXPLAIN'            => '使用這種較低的設定去產生較難以閱讀的圖片。設定 0 將停用 Y 軸背景干擾。',
+	'CAPTCHA_GD_WAVE'                  => '波形扭曲',
+	'CAPTCHA_GD_WAVE_EXPLAIN'            => '將波形扭曲的功能加入圖片中。',
+	'CAPTCHA_GD_3D_NOISE'               => '增加 3D 干擾物',
+	'CAPTCHA_GD_3D_NOISE_EXPLAIN'         => '增加額外的物體到圖片中，覆蓋原來的字。',
+	'CAPTCHA_GD_FONTS'                  => '使用不同的字體',
+	'CAPTCHA_GD_FONTS_EXPLAIN'            => '此設定控制許多不同的已使用之字體。您只可以使用預設字體或介紹已改變的字體。增加小寫字體也是可行的。',
+	'CAPTCHA_FONT_DEFAULT'               => '預設字體',
+	'CAPTCHA_FONT_NEW'                  => '新的字體',
+	'CAPTCHA_FONT_LOWER'               => '也有小寫',
+	'CAPTCHA_NO_GD'                     => '簡單的圖片',
+	'CAPTCHA_PREVIEW_MSG'               => '您所改變的確認代碼設定尚未儲存，這只是預覽。',
+	'CAPTCHA_PREVIEW_EXPLAIN'            => '使用目前選擇的確認代碼，看起來就像這個樣子。',
 
-	'CAPTCHA_SELECT'						=> '安裝 CAPTCHA 外掛',
-	'CAPTCHA_SELECT_EXPLAIN'				=> '由下拉式選單中選取論壇所認證的 CAPTCHA 外掛。灰色的項目目前是沒有用的，而在使用前必須調整基本組態。',
-	'CAPTCHA_CONFIGURE'						=> 'CAPTCHAs 設定',
-	'CAPTCHA_CONFIGURE_EXPLAIN'				=> '為已選擇的 CAPTCHA 改變設定。.',
-	'CONFIGURE'								=> '設定',
-	'CAPTCHA_NO_OPTIONS'					=> '這 CAPTCHA 沒有設定選項。',
+	'CAPTCHA_SELECT'                  => '已安裝外掛',
+	'CAPTCHA_SELECT_EXPLAIN'            => '由下拉式選單中選取論壇所認證的外掛。灰色的項目目前是沒有用的，而在使用前必須調整基本組態。',
+	'CAPTCHA_CONFIGURE'                  => '外掛設定',
+	'CAPTCHA_CONFIGURE_EXPLAIN'            => '為已選擇的外掛改變設定。',
+	'CONFIGURE'                        => '設定',
+	'CAPTCHA_NO_OPTIONS'               => '這外掛沒有設定選項。',
 
-	'VISUAL_CONFIRM_POST'					=> '啟用訪客發文確認代碼',
-	'VISUAL_CONFIRM_POST_EXPLAIN'			=> '當匿名使用者發文時，需要輸入一個隨機而符合圖片的代碼，以協助防止大量發文。',
-	'VISUAL_CONFIRM_REG'					=> '啟用註冊確認代碼',
-	'VISUAL_CONFIRM_REG_EXPLAIN'			=> '當新的使用者註冊時，需要輸入一個隨機而符合圖片的代碼，以協助防止大量註冊。',
-	'VISUAL_CONFIRM_REFRESH'				=> '啟用使用者重新整理確認代碼',
-	'VISUAL_CONFIRM_REFRESH_EXPLAIN'		=> '如果在註冊時無法判定確認代碼，那麼允許使用者去重新讀取新的確認代碼。某些外掛不支援這個選項。',
+	'VISUAL_CONFIRM_POST'               => '為訪客而啟用反廣告機器人的確認代碼',
+	'VISUAL_CONFIRM_POST_EXPLAIN'         => '當訪客使用者發文時，需要通過反廣告機器人的確認代碼，以協助防止自動發文。',
+	'VISUAL_CONFIRM_REG'               => '為註冊而啟用反廣告機器人的確認代碼',
+	'VISUAL_CONFIRM_REG_EXPLAIN'         => '當新的使用者註冊時，需要通過反廣告機器人的確認代碼，以協助防止自動註冊。',
+	'VISUAL_CONFIRM_REFRESH'            => '允許使用者重新整理反廣告機器人的確認代碼',
+	'VISUAL_CONFIRM_REFRESH_EXPLAIN'      => '如果在註冊時無法判定確認代碼，那麼允許使用者去重新讀取新的反廣告機器人之確認代碼。某些外掛也許不支援這個選項。',
 ));
 
 // Cookie Settings
@@ -374,6 +375,7 @@ $lang = array_merge($lang, array(
 	'YES_POST_MARKING_EXPLAIN'		=> '指出會員有參與發表的主題。',
 	'YES_READ_MARKING'				=> '啟用伺服器端主題標示',
 	'YES_READ_MARKING_EXPLAIN'		=> '在資料庫中儲存已讀/未讀資訊，而不只是一個 cookie。',
+	'YES_UNREAD_SEARCH'            => '啟用搜尋未閱讀的文章',
 ));
 
 // Auth settings
@@ -390,9 +392,9 @@ $lang = array_merge($lang, array(
 	'LDAP_EMAIL_EXPLAIN'			=> '設定它為您會員輸入的 e-mail 屬性名稱 (如果存在的話)，以便於為新會員自動設定 e-mail 位址，留空的話將導致第一次登入的會員之 e-mail 位址為空。',
 	'LDAP_INCORRECT_USER_PASSWORD'	=> '使用特定的會員名稱/密碼連結 LDAP 伺服器失敗。',
 	'LDAP_NO_EMAIL'					=> '特定的 e-mail 屬性不存在。',
-	'LDAP_NO_IDENTITY'				=> '無法為 %s 找到登入身份。',
+	'LDAP_NO_IDENTITY'				=> '無法為 %s 找到登入身分。',
 	'LDAP_PASSWORD'					=> 'LDAP 密碼',
-	'LDAP_PASSWORD_EXPLAIN'			=> '留白以便於使用匿名瀏覽。否則，為上面的會員填入密碼。這需要使用 Active Directory Servers。<strong>警告:</strong> 這個密碼將以清楚的文字儲存在資料庫中，對於每個可瀏覽資料庫，或者可以檢視此設定頁面的會員，都是可以看見的。',
+	'LDAP_PASSWORD_EXPLAIN'			=> '留白以便於使用匿名身分。否則，為上面的會員填入密碼。這需要使用 Active Directory Servers。<br /><em><strong>警告:</strong> 這個密碼將以純文字格式儲存在資料庫中，任何可以登入您的資料庫，或是瀏覽此設定面頁的人將可以看到這個密碼。</em>',
 	'LDAP_PORT'						=> 'LDAP 伺服器埠號',
 	'LDAP_PORT_EXPLAIN'				=> '隨便您指定用於連接 LDAP 伺服器的埠號，預設埠號為 389。',
 	'LDAP_SERVER'					=> 'LDAP 伺服器名稱',
@@ -527,7 +529,7 @@ $lang = array_merge($lang, array(
 	'JAB_PACKAGE_SIZE'			=> 'Jabber 包裹大小',
 	'JAB_PACKAGE_SIZE_EXPLAIN'	=> '這是一個包裹中發送的訊息數量。設定為 0，訊息將立即發送而不會延遲。',
 	'JAB_PASSWORD'				=> 'Jabber 密碼',
-	'JAB_PASSWORD_EXPLAIN'		=> '<em><strong>警告：</strong>這個密碼以純文字格式儲存在資料庫中。</em>',
+	'JAB_PASSWORD_EXPLAIN'		=> '<em><strong>警告：</strong>這個密碼以純文字格式儲存在資料庫中，任何可以登入您的資料庫，或是瀏覽此設定面頁的人將可以看到這個密碼。</em>',
 	'JAB_PORT'					=> 'Jabber 連接埠',
 	'JAB_PORT_EXPLAIN'			=> '除非您知道這個連接埠不是 5222，否則留白。',
 	'JAB_SERVER'				=> 'Jabber 伺服器',

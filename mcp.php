@@ -328,8 +328,8 @@ $lang = array_merge($lang, array(
 	'SPLIT_TOPIC_BEYOND'				=> '從選擇的文章開始分割主題',
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> '您確定要把選擇的文章與之後的所有文章從原來的主題中分割出來嗎？',
 	'SPLIT_TOPIC_EXPLAIN'				=> '您可以使用這個表格把主題分割為二，您可以選擇要分割的文章或是從選擇的文章開始分割。',
-	'THIS_PM_IP'				=> '這個私人訊息的 IP 位址',
 
+	'THIS_PM_IP'				=> '這個私人訊息的 IP 位址',
 	'THIS_POST_IP'				=> '這篇文章的 IP 位址',
 	'TOPICS_APPROVED_SUCCESS'	=> '這些主題已經成功核准。',
 	'TOPICS_DELETED_SUCCESS'	=> '這些主題已經成功刪除。',

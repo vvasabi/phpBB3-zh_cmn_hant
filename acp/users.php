@@ -42,6 +42,7 @@ $lang = array_merge($lang, array(
 	'BAN_ALREADY_ENTERED'	=> '封鎖在先前就已經輸入成功，封鎖列表沒有更新。',
 	'BAN_SUCCESSFUL'		=> '封鎖輸入成功。',
 
+	'CANNOT_BAN_ANONYMOUS'         => '您不被允許去封鎖匿名帳號。匿名使用者的權限可以在「權限」標籤底下設定。',
 	'CANNOT_BAN_FOUNDER'			=> '您不被允許封鎖創始人帳號。',
 	'CANNOT_BAN_YOURSELF'			=> '您不被允許封鎖自己的帳號。',
 	'CANNOT_DEACTIVATE_BOT'			=> '您不被允許停用機器人建立的帳號。請改以管理機器人頁面停用機器人。',

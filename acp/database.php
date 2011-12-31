@@ -4,7 +4,7 @@
 * acp_database [正體中文]
 *
 * @package language
-* @version $Id: database.php 9765 2009-07-17 10:11:10Z bantu $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (動機不明)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

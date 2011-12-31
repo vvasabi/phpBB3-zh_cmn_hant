@@ -4,7 +4,7 @@
 * help_faq [正體中文]
 *
 * @package language
-* @version $Id: help_faq.php 10495 2010-02-17 10:03:29Z bantu $
+* @version $Id$
 * @copyright (c) 2001 - 2007 phpBB TW Group (yoshika, 心靈捕手, 動機不明)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
