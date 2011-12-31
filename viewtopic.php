@@ -4,7 +4,7 @@
 * viewtopic [正體中文]
 *
 * @package language
-* @version $Id: viewtopic.php 8775 2008-08-21 15:41:12Z Kellanved $
+* @version $Id: viewtopic.php 9972 2009-08-14 08:42:46Z Kellanved $
 * @copyright (c) 2001 - 2007 phpBB TW Group (Mac)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -48,6 +48,7 @@ $lang = array_merge($lang, array(
 	'BUMP_TOPIC'	=> '推文',
 
 	'CODE'	=> '代碼',
+	'COLLAPSE_QR'			=> '隱藏快速回覆',
 
 	'DELETE_TOPIC'	=> '刪除主題',
 	'DOWNLOAD_NOTICE'	=> '您沒有權限檢視這篇文章所附加的檔案。',
@@ -59,7 +60,8 @@ $lang = array_merge($lang, array(
 
 	'FILE_NOT_FOUND_404'	=> '檔案 <strong>%s</strong> 並不存在。',
 	'FORK_TOPIC'	=> '複製主題',
-
+	'FULL_EDITOR'			=> '完全編輯',
+	
 	'LINKAGE_FORBIDDEN'	=> '您無權檢視、下載或連結此網站內容。',
 	'LOGIN_NOTIFY_TOPIC'	=> '您被通知這個主題有新文章，請登入檢視。',
 	'LOGIN_VIEWTOPIC'	=> '您必須註冊為會員並且登入後，才能檢視這個主題。',
@@ -86,11 +88,13 @@ $lang = array_merge($lang, array(
 	'PRINT_TOPIC'	=> '列印模式',
 
 	'QUICK_MOD'	=> '快速執行',
+	'QUICKREPLY'			=> '快速回覆',
 	'QUOTE'	=> '引言回覆',
 
 	'REPLY_TO_TOPIC'	=> '回覆主題',
 	'RETURN_POST'	=> '%s返回原來文章%s',
 
+	'SHOW_QR'				=> '快速回覆',
 	'SUBMIT_VOTE'	=> '投票送出',
 
 	'TOTAL_VOTES'	=> '總投票數',
