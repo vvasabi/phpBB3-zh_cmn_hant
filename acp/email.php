@@ -52,7 +52,9 @@ $lang = array_merge($lang, array(
 	'SEND_TO_GROUP'			=> '發送到群組',
 	'SEND_TO_USERS'			=> '發送到會員',
 	'SEND_TO_USERS_EXPLAIN'	=> '輸入的會員名稱將覆蓋上面選擇的群組。每一行輸入一個會員名稱。',
-
+	
+	'MAIL_BANNED'			=> '寄送郵件給被封鎖的會員',
+	'MAIL_BANNED_EXPLAIN'	=> '當寄送大量郵件給群組時，您可以在此選擇是否被封鎖的會員也收得到郵件。',
 	'MAIL_HIGH_PRIORITY'	=> '高',
 	'MAIL_LOW_PRIORITY'		=> '低',
 	'MAIL_NORMAL_PRIORITY'	=> '一般',

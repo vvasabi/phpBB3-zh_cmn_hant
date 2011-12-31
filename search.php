@@ -54,6 +54,7 @@ $lang = array_merge($lang, array(
 
 	'LOGIN_EXPLAIN_EGOSEARCH'	=> '您必須註冊並且登入後才能檢視您自己的文章。',
 	'LOGIN_EXPLAIN_UNREADSEARCH'=> '您必須註冊並且登入後才能檢視您尚未閱讀的文章。',
+	'LOGIN_EXPLAIN_NEWPOSTS'	=> '您必須註冊並且登入後才能檢視自從您上次訪問後之新的文章。',
 
 	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> '您所指定要搜尋的字數太多。請不要輸入超過 %1$d 字。',
 

@@ -169,6 +169,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_EDIT'				=> '編輯表情符號',
 	'SMILIE_NO_CODE'			=> '表情符號「%s」被忽略，因為沒有輸入代碼。',
 	'SMILIE_NO_EMOTION'			=> '表情符號「%s」被忽略，因為沒有輸入表情。',
+	'SMILIE_NO_FILE'			=> '表情符號「%s」被忽略，因為缺少這個檔案。',
 	'SMILIES_NONE_EDITED'		=> '沒有表情符號被更新。',
 	'SMILIES_ONE_EDITED'		=> '表情符號更新成功。',
 	'SMILIES_EDITED'			=> '表情更新成功。',
@@ -232,13 +233,13 @@ $lang = array_merge($lang, array(
 
 // Disallow Usernames
 $lang = array_merge($lang, array(
-	'ACP_DISALLOW_EXPLAIN'	=> '在這裡，您可以管理禁止使用的會員名稱。其中包含可以使用萬用字元 *。請注意！這對已經註冊的會員名稱是無效的，您必須先刪除它以後才能禁用之。',
+	'ACP_DISALLOW_EXPLAIN'	=> '在這裡，您可以管理禁止使用的會員名稱。其中包含可以使用萬用字元 *。',
 	'ADD_DISALLOW_EXPLAIN'	=> '您可以使用萬用字元 * 來禁用某個會員名稱。',
 	'ADD_DISALLOW_TITLE'	=> '增加禁用的會員名稱',
 
 	'DELETE_DISALLOW_EXPLAIN'	=> '您可以透過點選列表中的會員名稱，再點選送出，來移除一個禁用的會員名稱',
 	'DELETE_DISALLOW_TITLE'		=> '移除一個禁用的會員名稱',
-	'DISALLOWED_ALREADY'		=> '您輸入的會員名稱無法被禁用。它或許已經存在禁用會員名稱列表中、或許存在字詞過濾列表中、或者此會員名稱已經被使用。',
+	'DISALLOWED_ALREADY'		=> '您輸入的會員名稱已經被禁用。',
 	'DISALLOWED_DELETED'		=> '禁用的會員名稱移除成功。',
 	'DISALLOW_SUCCESSFUL'		=> '禁用的會員名稱增加成功。',
 

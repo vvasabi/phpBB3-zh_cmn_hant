@@ -116,7 +116,6 @@ $lang = array_merge($lang, array(
 	'REMOVE_FOE'	=> '移除黑名單',
 	'REMOVE_FRIEND'	=> '移除好友',
 
-	'SEARCH_USER_POSTS'	=> '搜尋會員發表的所有文章',
 	'SELECT_MARKED'	=> '選擇已標記會員',
 	'SELECT_SORT_METHOD'	=> '選擇排列方式 ',
 	'SEND_AIM_MESSAGE'	=> '傳送 AIM 訊息',

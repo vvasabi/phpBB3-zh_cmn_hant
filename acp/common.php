@@ -255,7 +255,7 @@ $lang = array_merge($lang, array(
 	'MOVE_UP'				=> '往上移動',
 
 	'NOTIFY'				=> '通知',
-	'NO_ADMIN'				=> '您沒有權限可以進入管理員控制台。',
+	'NO_ADMIN'				=> '您沒有權限可以管理這個論壇。',
 	'NO_EMAILS_DEFINED'		=> '沒有找到有效的 e-mail 位址。',
 	'NO_PASSWORD_SUPPLIED'	=> '要進入管理員控制台，您需要輸入您的密碼。',	
 
