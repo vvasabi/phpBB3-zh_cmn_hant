@@ -4,7 +4,7 @@
 * acp_common [正體中文]
 *
 * @package language
-* @version $Id: common.php 10134 2009-09-10 15:32:16Z marshalrusty $
+* @version $Id: common.php 10458 2010-01-26 15:26:07Z jelly_doughnut $
 * @copyright (c) 2001 - 2007 phpBB TW Group (動機不明, 心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -267,7 +267,7 @@ $lang = array_merge($lang, array(
 	'PARSE_URLS'						=> '可用超連結',
 	'PERMISSIONS_TRANSFERRED'			=> '權限轉移',
 	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> '您目前擁有來自 %1$s 的權限。您可以使用該會員的權限瀏覽討論區但是無法進入管理員控制台因為管理員的權限無法被轉移。您隨時都可以 <a href="%2$s"><strong>恢復您的權限設定</strong></a>。',
-	'PIXEL'								=> '像素',	
+
 	'PROCEED_TO_ACP'					=> '%s進入 ACP%s',
 
 	'REMIND'							=> '提醒',
@@ -338,6 +338,8 @@ $lang = array_merge($lang, array(
 	'NUMBER_TOPICS'		=> '主題數量',
 	'NUMBER_USERS'		=> '會員數量',
 	'NUMBER_ORPHAN'		=> '幽靈的附加檔案',
+
+	'PHP_VERSION_OLD'	=> '您伺服器中的 PHP 版本將不再被未來的 phpBB 版本支援。%s詳細情形%s',
 
 	'POSTS_PER_DAY'		=> '每天的發表文章',
 

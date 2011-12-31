@@ -4,7 +4,7 @@
 * mcp [正體中文]
 *
 * @package language
-* @version $Id: mcp.php 9854 2009-07-25 18:06:25Z naderman $
+* @version $Id: mcp.php 10455 2010-01-26 14:06:00Z nickvergessen $
 * @copyright (c) 2001 - 2007 phpBB TW Group (Mac)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -253,6 +253,8 @@ $lang = array_merge($lang, array(
 	'PM_REPORT_DELETED_SUCCESS'	=> '選擇的 PM 檢舉已經成功刪除。',
 	'PM_REPORTED_SUCCESS'		=> '這 PM 已被成功檢舉。',
 	'PM_REPORT_TOTAL'			=> '總共有 <strong>1</strong> 個 PM 檢舉需要處理。',
+	'PM_REPORTS_CLOSED_SUCCESS'	=> '選擇的 PM 檢舉已經成功結案。',
+	'PM_REPORTS_DELETED_SUCCESS'=> '選擇的 PM 檢舉已經成功刪除。',
 	'PM_REPORTS_TOTAL'			=> '總共有 <strong>%d</strong> 個 PM 檢舉需要處理。',
 	'PM_REPORTS_ZERO_TOTAL'		=> '沒有 PM 檢舉需要處理。',
 	'PM_REPORT_DETAILS'			=> 'PM 檢舉細節',
@@ -326,6 +328,7 @@ $lang = array_merge($lang, array(
 	'SPLIT_TOPIC_BEYOND'				=> '從選擇的文章開始分割主題',
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> '您確定要把選擇的文章與之後的所有文章從原來的主題中分割出來嗎？',
 	'SPLIT_TOPIC_EXPLAIN'				=> '您可以使用這個表格把主題分割為二，您可以選擇要分割的文章或是從選擇的文章開始分割。',
+	'THIS_PM_IP'				=> '這個私人訊息的 IP 位址',
 
 	'THIS_POST_IP'				=> '這篇文章的 IP 位址',
 	'TOPICS_APPROVED_SUCCESS'	=> '這些主題已經成功核准。',

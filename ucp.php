@@ -4,7 +4,7 @@
 * ucp [正體中文]
 *
 * @package language
-* @version $Id: ucp.php 10138 2009-09-11 14:38:23Z Kellanved $
+* @version $Id: ucp.php 10329 2009-12-13 14:03:45Z Kellanved $
 * @copyright (c) 2001 - 2007 phpBB TW Group (Mac)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -460,6 +460,7 @@ $lang = array_merge($lang, array(
 	'UCP_ZEBRA'   => '好友 &amp; 黑名單',
 	'UCP_ZEBRA_FOES'   => '管理黑名單',
 	'UCP_ZEBRA_FRIENDS'   => '管理好友',
+	'UNDISCLOSED_RECIPIENT'			=> '不公開的收件人',
 	'UNKNOWN_FOLDER'   => '未知資料夾',
 	'UNWATCH_MARKED'   => '停止訂閱',
 	'UPLOAD_AVATAR_FILE'   => '從您的電腦上傳頭像圖檔',

@@ -4,7 +4,7 @@
 * captcha_qa [正體中文]
 *
 * @package language
-* @version $Id: captcha_qa.php 9966 2009-08-12 15:12:03Z Kellanved $
+* @version $Id: captcha_qa.php 10450 2010-01-26 10:57:00Z Kellanved $
 * @copyright (c) 2009 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -58,6 +58,7 @@ $lang = array_merge($lang, array(
 	'QUESTION_TEXT_EXPLAIN'		=> '在註冊時將被問到的問題。.',
 
 	'QA_ERROR_MSG'				=> '請填滿所有的欄位，以及至少輸入一個答案。',
+	'QA_LAST_QUESTION'			=> '當外掛啟用時，您不能刪除所有的問題。',
 ));
 
 ?>

@@ -4,7 +4,7 @@
 * acp_posting [正體中文]
 *
 * @package language
-* @version $Id: posting.php 9902 2009-08-01 11:07:48Z acydburn $
+* @version $Id: posting.php 10517 2010-02-21 11:35:45Z Kellanved $
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -40,6 +40,8 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'ACP_BBCODES_EXPLAIN'		=> 'BBCode 是一種特殊的 HTML 簡易使用方式，它可以提供有效的控制各種頁面效果的顯示。在這裡，您可以增加/移除/編輯自行定義 BBCode。',
 	'ADD_BBCODE'				=> '增加 BBCode',
+	'BBCODE_DANGER'				=> '您嘗試新增的 BBCode 似乎是使用 {TEXT} 標記在 HTML 語法。這很有可能發生 XSS 安全問題。試試使用更多限制的 {SIMPLETEXT} 或 {INTTEXT} 型式取代。如果您瞭解潛在的風險，以及認為使用 {TEXT} 絕對無法避免的話，那麼繼續執行它。',
+	'BBCODE_DANGER_PROCEED'		=> '繼續執行', //'I understand the risk',
 
 	'BBCODE_ADDED'				=> 'BBCode 增加成功。',
 	'BBCODE_EDITED'				=> 'BBCode 編輯成功。',
@@ -73,8 +75,9 @@ $lang = array_merge($lang, array(
 	'TOO_MANY_BBCODES'		=> '您不能建立更多的 BBCodes。請先移除一個或更多個 BBCode 後再試試。',
 
 	'tokens'	=>	array(
-		'TEXT'			=> '任何文字，包括外國文字、數字、...等。您不該在 HTML 標籤中使用這個標誌符號，試試使用 IDENTIFIER 或 SIMPLETEXT。',
+		'TEXT'			=> '任何文字，包括外國文字、數字、...等。您不該在 HTML 標籤中使用這個標誌符號，試試使用 IDENTIFIER、INTTEXT 或 SIMPLETEXT。',
 		'SIMPLETEXT'	=> '包含拉丁文字母表 (A-Z)、數字、空格、逗點、小數點、減號、加號、連字號以及底線等字元。',
+		'INTTEXT'		=> '萬國碼字母字元、數字、空格、逗點、小數點、減號、加號、連字號以及底線等字元。',
 		'IDENTIFIER'	=> '包含拉丁文字母表 (A-Z)、數字、連字號以及底線等字元。',
 		'NUMBER'		=> '任何數字序列',
 		'EMAIL'			=> '有效的 e-mail 位址',

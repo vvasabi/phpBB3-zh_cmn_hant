@@ -4,7 +4,7 @@
 * common [正體中文]
 *
 * @package language
-* @version $Id: common.php 9845 2009-07-24 11:13:32Z acydburn $
+* @version $Id: common.php 10441 2010-01-25 15:57:10Z nickvergessen $
 * @copyright (c) 2001 - 2007 phpBB TW Group (yoshika, 心靈捕手, 動機不明)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -417,6 +417,7 @@ $lang = array_merge($lang, array(
 
 	'PAGE_OF'	=> '第 <strong>%1$d</strong> 頁 (共 <strong>%2$d</strong> 頁)',
 	'PASSWORD'	=> '密碼',
+	'PIXEL'					=> '像素',
 	'PLAY_QUICKTIME_FILE'	=> '播放 Quicktime 檔案',
 	'PM'					=> 'PM',
 	'POSTING_MESSAGE'	=> '發表訊息於 %s',
@@ -491,6 +492,8 @@ $lang = array_merge($lang, array(
 	'RETURN_TO'	=> '回到',
 	'FEED'						=> '消息來源',
 	'FEED_NEWS'					=> '新聞',
+	'FEED_TOPICS_ACTIVE'		=> '最近討論的主題',
+	'FEED_TOPICS_NEW'			=> '新的主題',
 	'RULES_ATTACH_CAN'	=> '您 <strong>可以</strong> 在這個版面上傳附加檔案',
 	'RULES_ATTACH_CANNOT'	=> '您 <strong>不能</strong> 在這個版面上傳附加檔案',
 	'RULES_DELETE_CAN'	=> '您 <strong>可以</strong> 在這個版面刪除您的文章',

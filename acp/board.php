@@ -4,7 +4,7 @@
 * acp_board [正體中文]
 *
 * @package language
-* @version $Id: board.php 10080 2009-08-31 14:57:04Z nickvergessen $
+* @version $Id: board.php 10554 2010-02-28 19:20:23Z naderman $
 * @copyright (c) 2001 - 2007 phpBB TW Group (心靈捕手)
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -73,7 +73,8 @@ $lang = array_merge($lang, array(
 	'ALLOW_PM_REPORT'			=> '允許會員檢舉私人訊息',
 	'ALLOW_PM_REPORT_EXPLAIN'	=> '如果啟用，那麼會員將有檢舉他們已接收私人訊息或傳送給論壇版主的選項。這些私人訊息將會顯示在 MCP 中。',
 	'ALLOW_QUICK_REPLY'			=> '允許快速回覆',
-	'ALLOW_QUICK_REPLY_EXPLAIN'	=> '這個設定定義快速回覆的啟用與否。如果啟用，那麼需要在版面的快速回覆選項也同時啟用。',
+	'ALLOW_QUICK_REPLY_EXPLAIN'	=> '這個設定允許在整個論壇禁用快速回覆。當啟用時，版面特殊的設定將決定快速回覆是否顯示於個別的版面。',
+	'ALLOW_QUICK_REPLY_BUTTON'	=> '在所有的版面啟用快速回覆。',
 	'ALLOW_SIG'					=> '允許使用簽名檔',
 	'ALLOW_SIG_BBCODE'			=> '允許在會員簽名檔中使用 BBCode',
 	'ALLOW_SIG_FLASH'			=> '允許在會員簽名檔中使用 <code>[FLASH]</code> 的 BBCode 標籤',
@@ -149,7 +150,7 @@ $lang = array_merge($lang, array(
 	'ALLOW_POST_FLASH_EXPLAIN'			=> '如果不允許，那麼 <code>[FLASH]</code> BBCode 標籤在文章中是無法使用的。否則，權限系統必須控制會員可以使用 <code>[FLASH]</code> BBCode 標籤。',
 
 	'BUMP_INTERVAL'					=> '推文時間間隔',
-	'BUMP_INTERVAL_EXPLAIN'			=> '距離一個主題的最後發表文章多少時間 (分鐘，小時或天) 後，才能推文。',
+	'BUMP_INTERVAL_EXPLAIN'			=> '距離一個主題的最後發表文章多少時間 (分鐘、小時或天) 後，才能推文。設定 0 表示停用此功能。',
 	'CHAR_LIMIT'					=> '每篇文章最多字元數',
 	'CHAR_LIMIT_EXPLAIN'			=> '每篇文章所允許發表的字元上限。設定為 0，表示沒有限制。',
 	'DELETE_TIME'					=> '刪除時間限制',
@@ -208,9 +209,9 @@ $lang = array_merge($lang, array(
 	'ACC_ACTIVATION'			=> '帳號啟用',
 	'ACC_ACTIVATION_EXPLAIN'	=> '這決定了會員是否可以在註冊後立刻登入討論區，還是必須進行確認。您也可以完全地停止新的註冊。',
 	'NEW_MEMBER_POST_LIMIT'			=> '新會員文章限制',
-	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> '新會員直到他們達到此文章數之前，都是在 <em>新註冊會員</em> 群組之內。您可以使用這個群組讓他們使用 PM 系統，或去檢視他們的文章。<strong>設定 0 表示停用此功能。</strong>',
+	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> '新會員直到他們達到此文章數之前，都是在 <em>新註冊會員</em> 群組之內。您可以使用這個群組去抑制他們使用私訊或檢視他們的文章。<strong>設定 0 表示停用此功能。</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> '預設為新註冊會員群組',
-	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> '如果設定為是，那麼新會員文章限制不只是將新註冊會員放進 <em>新註冊會員</em> 群組, 而且將是他們的預設會員群組。如果您想要指派一個有預設等級且/或頭像的群組供會員繼承，這也許會派上用場。',
+	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> '如果設定為是，那麼「新會員文章限制」不只是將新註冊會員放進 <em>新註冊會員</em> 群組，而且該群組將是他們的預設會員群組。如果您想要指派一個有預設等級 和/或 頭像的群組供新會員繼承，那麼這也許會派上用場。',
 
 	'ACC_ADMIN'					=> '由管理員',
 	'ACC_DISABLE'				=> '停止',
@@ -249,29 +250,37 @@ $lang = array_merge($lang, array(
 	'ACP_FEED_MANAGEMENT'				=> '一般消息來源設定',
 	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> '這個模組使用各種有效的 ATOM 消息來源，解析任何文章中的 BBCode，使它們可以在外部的消息來源中被閱讀。',
 
+	'ACP_FEED_GENERAL'					=> '一般消息來源設定',
+	'ACP_FEED_POST_BASED'				=> '基本的文章之消息來源設定',
+	'ACP_FEED_TOPIC_BASED'				=> '基本的主題之消息來源設定',
+	'ACP_FEED_SETTINGS_OTHER'			=> '其他的消息來源與設定',
+
 	'ACP_FEED_ENABLE'					=> '啟用消息來源',
 	'ACP_FEED_ENABLE_EXPLAIN'			=> '開啟或關閉整個論壇的 ATOM 消息來源。<br />無論底下的選項設定為何，停用這個將關閉所有的消息來源。',
 	'ACP_FEED_LIMIT'					=> '項目數量',
 	'ACP_FEED_LIMIT_EXPLAIN'			=> '消息來源項目所要顯示的最大數量。',
 
-	'ACP_FEED_OVERALL_FORUMS'			=> '啟用整個論壇之消息來源',
-	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> '消息來源顯示論壇所有主題的最後發表之文章。',
-	'ACP_FEED_OVERALL_FORUMS_LIMIT'		=> '在論壇消息來源中每頁所要顯示的項目數量',
-
-	'ACP_FEED_OVERALL_TOPIC'			=> '啟用所有主題之消息來源',
-	'ACP_FEED_OVERALL_TOPIC_EXPLAIN'	=> '啟用「所有主題」之消息來源。',
-	'ACP_FEED_OVERALL_TOPIC_LIMIT'		=> '在主題消息來源中每頁所要顯示的項目數量',
+	'ACP_FEED_OVERALL'					=> '啟用整個論壇之消息來源',
+	'ACP_FEED_OVERALL_EXPLAIN'			=> '整個論壇之新的文章。',
 	'ACP_FEED_FORUM'					=> '啟用每個版面之消息來源',
-	'ACP_FEED_FORUM_EXPLAIN'			=> '單一版面的新文章。',
+	'ACP_FEED_FORUM_EXPLAIN'			=> '單一的版面和子版面之新的文章。',
 	'ACP_FEED_TOPIC'					=> '啟用每個主題之消息來源',
-	'ACP_FEED_TOPIC_EXPLAIN'			=> '單一主題的新文章。',
+	'ACP_FEED_TOPIC_EXPLAIN'			=> '單一的主題之新的文章。',
+
+	'ACP_FEED_TOPICS_NEW'				=> '啟用新的主題之消息來源',
+	'ACP_FEED_TOPICS_NEW_EXPLAIN'		=> '啟用「新的主題」之消息來源，將顯示最近被建立的主題，包含第一篇文章。',
+	'ACP_FEED_TOPICS_ACTIVE'			=> '啟用最近討論的主題之消息來源',
+	'ACP_FEED_TOPICS_ACTIVE_EXPLAIN'	=> '啟用「最近討論的主題」之消息來源，將顯示最近討論的主題，包含最後發表的文章。',
 	'ACP_FEED_NEWS'						=> '新聞之消息來源',
 	'ACP_FEED_NEWS_EXPLAIN'				=> '自這些版面中拉出第一篇文章。沒有選擇版面將停用此功能。<br />以按住 <samp>CTRL</samp> 以及點選來選擇多個版面。',
 
-	'ACP_FEED_GENERAL'					=> '一般消息來源設定',
+	'ACP_FEED_OVERALL_FORUMS'			=> '啟用版面之消息來源',
+	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> '啟用「所有的版面」之消息來源，將顯示版面的列表。',
 
+	'ACP_FEED_HTTP_AUTH'				=> '允許 HTTP 驗證',
+	'ACP_FEED_HTTP_AUTH_EXPLAIN'		=> '啟用 HTTP 驗證，將使用 <samp>auth=http</samp> 參數在消息來源的網址，以允許會員們去接收訪客所無法瀏覽的內容。請注意！在 .htaccess 檔案中，一些 PHP 設定需要額外的改變。詳細的說明可以在那個檔案中找到。',
 	'ACP_FEED_ITEM_STATISTICS'			=> '項目統計',
-	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> '下面的消息來源顯示個別的項目統計<br />(發表者、日期與時間、回覆數、觀看數)',
+	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> '下面的消息來源顯示個別的項目統計<br />(例如：發表者、日期與時間、回覆數、觀看數)',
 	'ACP_FEED_EXCLUDE_ID'				=> '排除這些版面',
 	'ACP_FEED_EXCLUDE_ID_EXPLAIN'		=> '來自這些版面的內容將 <strong>不包含在消息來源中</strong>。沒有選擇版面將自所有的版面拉出資料。<br />以按住 <samp>CTRL</samp> 以及點選來選擇/刪除多個版面。',
 ));
@@ -495,7 +504,7 @@ $lang = array_merge($lang, array(
 	'SMTP_DIGEST_MD5'				=> 'DIGEST-MD5',
 	'SMTP_LOGIN'					=> 'LOGIN',
 	'SMTP_PASSWORD'					=> 'SMTP 密碼',
-	'SMTP_PASSWORD_EXPLAIN'			=> '只有當您的 SMTP 伺服器需要它時才要輸入。',
+	'SMTP_PASSWORD_EXPLAIN'			=> '只有當您的 SMTP 伺服器需要密碼時，才要輸入。<em><strong>警告：</strong>這個密碼以純文字格式儲存在資料庫中。</em>',
 	'SMTP_PLAIN'					=> 'PLAIN',
 	'SMTP_POP_BEFORE_SMTP'			=> 'POP-BEFORE-SMTP',
 	'SMTP_PORT'						=> 'SMTP 伺服器連接埠',
@@ -518,6 +527,7 @@ $lang = array_merge($lang, array(
 	'JAB_PACKAGE_SIZE'			=> 'Jabber 包裹大小',
 	'JAB_PACKAGE_SIZE_EXPLAIN'	=> '這是一個包裹中發送的訊息數量。設定為 0，訊息將立即發送而不會延遲。',
 	'JAB_PASSWORD'				=> 'Jabber 密碼',
+	'JAB_PASSWORD_EXPLAIN'		=> '<em><strong>警告：</strong>這個密碼以純文字格式儲存在資料庫中。</em>',
 	'JAB_PORT'					=> 'Jabber 連接埠',
 	'JAB_PORT_EXPLAIN'			=> '除非您知道這個連接埠不是 5222，否則留白。',
 	'JAB_SERVER'				=> 'Jabber 伺服器',
