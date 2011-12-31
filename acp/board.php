@@ -545,6 +545,10 @@ $lang = array_merge($lang, array(
 	'JAB_USE_SSL_EXPLAIN'		=> '如果啟用，那麼安全連接將試著被建立。如果 5222 已經被指定，那麼 Jabber 連接埠將修改為 5223。',
 	'JAB_USERNAME'				=> 'Jabber 會員名稱或 JID',
 	'JAB_USERNAME_EXPLAIN'		=> '請指定一個已經註冊的會員名稱或一個有效的 JID。此會員名稱將無法被檢查是否有效。如果您只有輸入會員名稱，那麼您的 JID 將是您的會員名稱以及上頭所指定的伺服器。此外，請詳述有效的 JID，例如：「user@jabber.org」。',
+
+	// mod
+	'ALLOW_WIKI'	=> '允許使用 Wiki語法',
+	'TOPIC_COLOURS'	=> '主題顏色'
 ));
 
 ?>
