@@ -61,6 +61,11 @@ $lang = array_merge($lang, array(
 	'VIEW_FORUM'			=> '檢視版面',
 	'VIEW_FORUM_TOPIC'		=> '1 個主題',
 	'VIEW_FORUM_TOPICS'		=> '%d 個主題',
+
+	// mod
+	'SHOW_ALL_TOPICS'       => '顯示所有主題',
+	'TOPIC_TYPE'            => '主題類型',
+	'TOPIC_HIDDEN'          => '隱藏'
 ));
 
 ?>
