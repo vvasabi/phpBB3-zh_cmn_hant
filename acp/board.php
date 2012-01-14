@@ -53,7 +53,7 @@ $lang = array_merge($lang, array(
 	'SYSTEM_TIMEZONE'            => '訪客時區',
 	'SYSTEM_TIMEZONE_EXPLAIN'         => '此時區用來顯示時間給尚未登入的使用者（訪客、機器人）。已登入的使用者可以經由註冊時以及進入會員控制台去設定他們自己的時區。',
 	'WARNINGS_EXPIRE'				=> '警告持續',
-	'WARNINGS_EXPIRE_EXPLAIN'		=> '幾天後這份警告將到期，並從會員的記錄中自動消失。',
+	'WARNINGS_EXPIRE_EXPLAIN'		=> '幾天後這份警告將到期，並從會員的記錄中自動消失。設定為 0 表示警告永久。',
 ));
 
 // Board Features
@@ -174,7 +174,7 @@ $lang = array_merge($lang, array(
 	'MAX_POST_URLS'					=> '每篇文章的最多連結',
 	'MAX_POST_URLS_EXPLAIN'			=> '在一篇文章中允許的最多連結數量。設定為 0，表示沒有限制。',
 	'MIN_CHAR_LIMIT'				=> '每篇文章/私訊最少字元數',
-	'MIN_CHAR_LIMIT_EXPLAIN'		=> '每篇文章/私訊所允許發表的字元下限。',
+	'MIN_CHAR_LIMIT_EXPLAIN'		=> '每篇文章/私訊所允許發表的字元下限。最小值為 1。',
 	'POSTING'						=> '發表中',
 	'POSTS_PER_PAGE'				=> '每頁顯示文章數',
 	'QUOTE_DEPTH_LIMIT'            => '引言的最多層數',

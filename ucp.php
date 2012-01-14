@@ -138,6 +138,7 @@ $lang = array_merge($lang, array(
 	'CURRENT_IMAGE'   => '目前的圖片',
 	'CURRENT_PASSWORD'   => '目前的密碼',
 	'CURRENT_PASSWORD_EXPLAIN'   => '在更換密碼、e-mail 位址或會員名稱時，您必須輸入您目前的密碼。',
+	'CUR_PASSWORD_EMPTY'		=> '您沒有輸入目前的密碼。',
 	'CUR_PASSWORD_ERROR'   => '您輸入的目前的密碼是錯誤的。',
 	'CUSTOM_DATEFORMAT'   => '自訂...',
 
@@ -170,7 +171,7 @@ $lang = array_merge($lang, array(
 	'DOWNLOADS'   => '下載',
 	'DRAFTS_DELETED'   => '所有選取的草稿已經成功刪除。',
 	'DRAFTS_EXPLAIN'   => '在這裡，您可以檢視、編輯和刪除您儲存的草稿。',
-	'DRAFT_UPDATED'   => '草稿已經成功刪除。',
+	'DRAFT_UPDATED'   => '草稿已經成功更新。',
 
 	'EDIT_DRAFT_EXPLAIN'   => '在這裡您可以編輯您的草稿。草稿不能包含附加檔案和投票資訊。',
 	'EMAIL_BANNED_EMAIL'   => '您輸入的 e-mail 位址已被禁止使用。',
@@ -268,9 +269,11 @@ $lang = array_merge($lang, array(
 	'MOVE_TO_FOLDER'   => '移動到資料夾',
 	'MOVE_UP'   => '往上移',
 
+	'NEW_EMAIL_CONFIRM_EMPTY'		=> '您沒有輸入確認 e-mail 位址。',
 	'NEW_EMAIL_ERROR'   => '您所提供的 e-mail 位址與資料庫不符。',
 	'NEW_FOLDER_NAME'   => '新的資料夾名稱',
 	'NEW_PASSWORD'   => '新的密碼',
+	'NEW_PASSWORD_CONFIRM_EMPTY'	=> '您沒有輸入確認密碼。',
 	'NEW_PASSWORD_ERROR'   => '您所提供的密碼與資料庫不符。',
 	'NOTIFY_METHOD'   => '通知方式',
 	'NOTIFY_METHOD_BOTH'   => '全部',
