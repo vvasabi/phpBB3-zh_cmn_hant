@@ -48,7 +48,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_A_HELP'	=> '將附加檔案加入文章內：[attachment=]filename.ext[/attachment]',
 	'BBCODE_B_HELP'	=> '粗體：[b]text[/b]',
 	'BBCODE_C_HELP'	=> '顯示程式代碼：[code]code[/code]',
-	'BBCODE_E_HELP'	=> '列表：增加一個列表元件',
+	'BBCODE_D_HELP'				=> '插入 Flash：[flash=寬度,高度]http://url[/flash]',
 	'BBCODE_F_HELP'	=> '文字大小：[size=x-small]small text[/size]',
 	'BBCODE_IS_OFF'	=> '%sBBCode%s <em>禁止</em>使用',
 	'BBCODE_IS_ON'	=> '%sBBCode%s <em>允許</em>使用',
@@ -61,7 +61,7 @@ $lang = array_merge($lang, array(
 	'BBCODE_S_HELP'	=> '文字顏色：[color=red]text[/color]  提示：您也可以使用 color=#FF0000',
 	'BBCODE_U_HELP'	=> '底線：[u]text[/u]',
 	'BBCODE_W_HELP'	=> '插入連結：[url]http://url[/url] 或 [url=http://url]URL text[/url]',
-	'BBCODE_D_HELP'	=> '插入 Flash：[flash=寬度,高度]http://url[/flash]',
+	'BBCODE_Y_HELP'				=> '列表：增加一個列表元件',
 	'BUMP_ERROR'	=> '您不能在發表後馬上進行推文。',
 
 	'CANNOT_DELETE_REPLIED'	=> '很抱歉！您只能刪除尚無回覆的文章。',

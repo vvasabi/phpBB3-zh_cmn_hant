@@ -326,6 +326,15 @@ $lang = array_merge($lang, array(
 
 	'DATABASE_SERVER_INFO'	=> '資料庫伺服器',
 	'DATABASE_SIZE'			=> '資料庫大小',
+	// 與 mbstring 相關的環境設定之檢查
+	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> '函數重載的設定不當',
+	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> '<var>mbstring.func_overload</var> 必須設定為 0 或 4。您可以在 <samp>PHP 資訊</samp> 頁檢查目前的設定值。',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION'			=> '透明的字元編碼之設定不當',
+	'ERROR_MBSTRING_ENCODING_TRANSLATION_EXPLAIN'	=> '<var>mbstring.encoding_translation</var> 必須設定為 0。您可以在 <samp>PHP 資訊</samp> 頁檢查目前的設定值。',
+	'ERROR_MBSTRING_HTTP_INPUT'						=> 'HTTP 輸入的字元轉換之設定不當',
+	'ERROR_MBSTRING_HTTP_INPUT_EXPLAIN'				=> '<var>mbstring.http_input</var> 必須設定為 <samp>pass</samp>. 您可以在 <samp>PHP 資訊</samp> 頁檢查目前的設定值。',
+	'ERROR_MBSTRING_HTTP_OUTPUT'					=> 'HTTP 輸出的字元轉換之設定不當',
+	'ERROR_MBSTRING_HTTP_OUTPUT_EXPLAIN'			=> '<var>mbstring.http_output</var> 必須設定為 <samp>pass</samp>. 您可以在 <samp>PHP 資訊</samp> 頁檢查目前的設定值。',
 
 	'FILES_PER_DAY'		=> '每天的附加檔案',
 	'FORUM_STATS'		=> '討論區統計',
@@ -381,7 +390,7 @@ $lang = array_merge($lang, array(
 	'VIEW_INACTIVE_USERS'	=> '檢視未啟用的會員',
 
 	'WELCOME_PHPBB'			=> '歡迎光臨 phpBB',
-	'WRITABLE_CONFIG'		=> '您目前的組態設定檔 (config.php) 是可以寫入的. 我們強烈建議您改變權限為 640 或至少是 644 (例如：<a href="http://en.wikipedia.org/wiki/Chmod" rel="external">chmod</a> 640 config.php)。',
+	'WRITABLE_CONFIG'		=> '您目前的組態設定檔 (config.php) 是可以寫入的。我們強烈建議您改變權限為 640 或至少是 644 (例如：<a href="http://en.wikipedia.org/wiki/Chmod" rel="external">chmod</a> 640 config.php)。',
 ));
 
 // Inactive Users

@@ -59,6 +59,7 @@ $lang = array_merge($lang, array(
 
 	'RESTORE_FAILURE'	=> '這個備份檔可能有錯誤',
 	'RESTORE_OPTIONS'	=> '還原選項',
+	'RESTORE_SELECTED_BACKUP'	=> '您確定要還原所選擇的備份嗎？',
 	'RESTORE_SUCCESS'	=> '這個資料庫已經還原成功。<br /><br />您的討論版已經恢復到備份前的狀態',
 
 	'SELECT_ALL'		=> '全部選擇',

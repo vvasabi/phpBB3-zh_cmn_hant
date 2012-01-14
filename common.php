@@ -43,7 +43,7 @@ $lang = array_merge($lang, array(
 	'TRANSLATION_INFO'	=> '正體中文語系由 <a href="http://phpbb-tw.net/" onclick="window.open(this.href);return false;"><span style="color:#ff6633"><strong>竹貓星球</strong></span></a> 維護製作',
 	'DIRECTION'			=> 'ltr',
 	'DATE_FORMAT'	=> '|Y-m-d|',// 2007-01-01
-	'USER_LANG'	=> 'zh-tw',
+	'USER_LANG'	=> 'zh-cmn-hant',
 
 	'1_DAY'	=> '1天',
 	'1_MONTH'	=> '1個月',
@@ -165,6 +165,7 @@ $lang = array_merge($lang, array(
 	'EMPTY_MESSAGE_SUBJECT'	=> '您沒有輸入標題。',
 	'ENABLED'	=> '啟用',
 	'ENCLOSURE'	=> '包圍',
+	'ENTER_USERNAME'					=> '輸入會員名稱',
 	'ERR_CHANGING_DIRECTORY'	=> '無法變更資料夾。',
 	'ERR_CONNECTING_SERVER'	=> '連接伺服器錯誤。',
 	'ERR_JAB_AUTH'	=> '無法取得 Jabber 伺服器授權。',
@@ -200,6 +201,7 @@ $lang = array_merge($lang, array(
 	'FORUM_RULES_LINK'	=> '請點選這裡檢視版面規則',
 	'FROM'	=> '從',
 	'FSOCK_DISABLED'	=> '操作無法完成，因為 <var>fsockopen</var> 函數被停用或是伺服器沒有回應。',
+	'FSOCK_TIMEOUT'			=> '當從網路串流讀取時，發生逾時。',
 
 	'FTP_FSOCK_HOST'	=> 'FTP 主機',
 	'FTP_FSOCK_HOST_EXPLAIN'	=> '您的 FTP 伺服器連結位址。',
@@ -652,6 +654,10 @@ $lang = array_merge($lang, array(
 	'UNREAD_PMS'	=> '<strong>%d</strong> 個未讀訊息',
 	'UNREAD_POST'         => '未閱讀文章',
 	'UNREAD_POSTS'         => '未閱讀文章',
+	'UNWATCH_FORUM_CONFIRM'		=> '您確定要取消訂閱這個版面嗎？',
+	'UNWATCH_FORUM_DETAILED'	=> '您確定要取消訂閱「%s」版面嗎？',
+	'UNWATCH_TOPIC_CONFIRM'		=> '您確定要取消訂閱這個主題嗎？',
+	'UNWATCH_TOPIC_DETAILED'	=> '您確定要取消訂閱「%s」主題嗎？',
 	'UNWATCHED_FORUMS'	=> '您將不再訂閱這些選取的版面。',
 	'UNWATCHED_TOPICS'	=> '您將不再訂閱這些選取的主題。',
 	'UNWATCHED_FORUMS_TOPICS'	=> '您將不再訂閱這些選取的文章。',
@@ -700,6 +706,10 @@ $lang = array_merge($lang, array(
 
 	'WARNINGS'	=> '警告',
 	'WARN_USER'	=> '警告會員',
+	'WATCH_FORUM_CONFIRM'	=> '您確定要訂閱這個版面嗎？',
+	'WATCH_FORUM_DETAILED'	=> '您確定要訂閱「%s」版面嗎？',
+	'WATCH_TOPIC_CONFIRM'	=> '您確定要訂閱這個主題嗎？',
+	'WATCH_TOPIC_DETAILED'	=> '您確定要訂閱「%s」主題嗎？',
 	'WELCOME_SUBJECT'	=> '歡迎來到 %s 討論區',
 	'WEBSITE'	=> '網站',
 	'WHOIS'				=> 'Whois',
