@@ -110,7 +110,6 @@ $lang = array_merge($lang, array(
 
 	'POST_IP'	=> 'IP/網域名稱',
 
-	'RANK'	=> '等級',
 	'REAL_NAME'	=> '收件者名稱',
 	'RECIPIENT'	=> '收件者',
 	'REMOVE_FOE'	=> '移除黑名單',

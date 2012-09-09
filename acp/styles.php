@@ -267,6 +267,7 @@ $lang = array_merge($lang, array(
 	'IMG_USER_ICON9'		=> '會員自訂圖檔 9',
 	'IMG_USER_ICON10'		=> '會員自訂圖檔 10',
 
+	'INACTIVE_STYLES'			=> '未啟用的風格',
 	'INCLUDE_DIMENSIONS'		=> '包含尺寸',
 	'INCLUDE_IMAGESET'			=> '包含圖檔組',
 	'INCLUDE_TEMPLATE'			=> '包含樣板',
@@ -284,6 +285,7 @@ $lang = array_merge($lang, array(
 	'INSTALLED_STYLE'			=> '已安裝的風格',
 	'INSTALLED_TEMPLATE'		=> '已安裝的樣板',
 	'INSTALLED_THEME'			=> '已安裝的主題',
+
 	'KEEP_IMAGESET'				=> '保留「%s」圖檔組',
 	'KEEP_TEMPLATE'				=> '保留「%s」樣板',
 	'KEEP_THEME'				=> '保留「%s」主題',
@@ -291,7 +293,6 @@ $lang = array_merge($lang, array(
 	'LINE_SPACING'				=> '行間距',
 	'LOCALISED_IMAGES'			=> '本地化',
 	'LOCATION_DISABLED_EXPLAIN'	=> '這個設定是繼承的，而無法被改變。',
-
 
 	'NO_CLASS'					=> '在風格表單中無法找到類型。',
 	'NO_IMAGESET'				=> '在檔案系統中無法找到圖檔組。',

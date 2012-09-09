@@ -67,6 +67,7 @@ $lang = array_merge($lang, array(
 	'IP_UNBAN_EXPLAIN'			=> '您可以使用適當的滑鼠與鍵盤的結合，一次選擇多個 IP，執行解除封鎖或解除排除的操作。排除的 IP 有特別背景標示。',
 
 	'LENGTH_BAN_INVALID'		=> '日期格式必須是 <kbd>YYYY-MM-DD</kbd>。',
+
 	'OPTIONS_BANNED'			=> '已封鎖',
 	'OPTIONS_EXCLUDED'			=> '已排除',
 

@@ -326,6 +326,7 @@ $lang = array_merge($lang, array(
 
 	'DATABASE_SERVER_INFO'	=> '資料庫伺服器',
 	'DATABASE_SIZE'			=> '資料庫大小',
+
 	// 與 mbstring 相關的環境設定之檢查
 	'ERROR_MBSTRING_FUNC_OVERLOAD'					=> '函數重載的設定不當',
 	'ERROR_MBSTRING_FUNC_OVERLOAD_EXPLAIN'			=> '<var>mbstring.func_overload</var> 必須設定為 0 或 4。您可以在 <samp>PHP 資訊</samp> 頁檢查目前的設定值。',
@@ -404,7 +405,7 @@ $lang = array_merge($lang, array(
 	'INACTIVE_REASON_UNKNOWN'		=> '不知道',
 	'INACTIVE_USERS'				=> '未啟用的會員',
 	'INACTIVE_USERS_EXPLAIN'		=> '這是已經註冊但是尚未啟用帳號的會員列表。如果您希望的話，那麼您可以啟用、刪除或提醒 (發送 e-mail) 這些會員。',
-	'INACTIVE_USERS_EXPLAIN_INDEX'	=> '這是最近十個已經註冊但是尚未啟用帳號的會員列表。您可以從適當的選單項目或下面的「檢視未啟用的會員」連結檢視完整列表，從那裡您可以啟用、刪除或提醒 (發送 e-mail) 這些會員。',
+	'INACTIVE_USERS_EXPLAIN_INDEX'	=> '這是最近十個已經註冊但是尚未啟用帳號的會員列表。帳號是無效的，可能是因為會員註冊後需要啟用，而這些帳號尚未啟用，或者是因為這些帳號已被停用。您可以從適當的選單項目或下面的「檢視未啟用的會員」連結檢視完整列表，從那裡您可以啟用、刪除或提醒 (發送 e-mail) 這些會員。',
 
 	'NO_INACTIVE_USERS'	=> '沒有未啟用的會員',
 

@@ -42,6 +42,7 @@ $lang = array_merge($lang, array(
 	'ADD_POLL'	=> '建立票選活動',
 	'ADD_POLL_EXPLAIN'	=> '如果您要在主題內進行票選活動，請填寫下方表單。',
 	'ALREADY_DELETED'	=> '很抱歉！內容已經被刪除了。',
+	'ATTACH_DISK_FULL'			=> '沒有足夠的硬碟空間可以發表這個附加檔案。',
 	'ATTACH_QUOTA_REACHED'	=> '很抱歉！您的附加檔案配額已滿。',
 	'ATTACH_SIG'	=> '附上簽名 (簽名檔可以在會員控制台中更改)',
 
