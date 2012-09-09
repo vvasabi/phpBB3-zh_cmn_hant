@@ -52,6 +52,7 @@ $lang = array_merge($lang, array(
 	'BLANK_PREFIX_FOUND'			=> '對資料庫的掃瞄顯示存在可用的無首碼表單。',
 	'BOARD_NOT_INSTALLED'			=> '沒有發現已安裝的 phpBB',
 	'BOARD_NOT_INSTALLED_EXPLAIN'	=> '為了進行轉換功能，您必須預先安裝一個全新的 phpBB3。請進行[<a href="%s">全新安裝</a>]。',
+	'BACKUP_NOTICE'					=> '進行更新前請備份您的論壇，以防止更新過程中發生任何的問題。',
 
 	'CATEGORY'					=> '分區',
 	'CACHE_STORE'				=> '快取類型',

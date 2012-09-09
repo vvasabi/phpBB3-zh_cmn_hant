@@ -108,7 +108,7 @@ $lang = array_merge($lang, array(
 	'MAX_AVATAR_SIZE'				=> '頭像尺寸最大限制',
 	'MAX_AVATAR_SIZE_EXPLAIN'		=> '寬 x 高 (像素)。',
 	'MAX_FILESIZE'					=> '頭像檔案大小限制',
-	'MAX_FILESIZE_EXPLAIN'			=> '允許上傳的頭像檔案大小。',
+	'MAX_FILESIZE_EXPLAIN'			=> '允許上傳的頭像檔案大小。如果設定 0，那麼可以上傳的檔案大小，將只受限於您的 PHP 設定。',
 	'MIN_AVATAR_SIZE'				=> '頭像尺寸最小限制',
 	'MIN_AVATAR_SIZE_EXPLAIN'		=> '寬 x 高 (像素)。',
 ));

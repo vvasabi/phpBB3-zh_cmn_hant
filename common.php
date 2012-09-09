@@ -191,7 +191,7 @@ $lang = array_merge($lang, array(
 	'FORM_INVALID'	=> '表單送出無效。請再執行一次。',
 	'FORUM'	=> '版面',
 	'FORUMS'	=> '版面',
-	'FORUMS_MARKED'			=> '所選擇的版面已經被標示為已閱讀。',
+	'FORUMS_MARKED'			=> '版面已經被標示為已閱讀。',
 	'FORUM_CAT'	=> '版面類別',
 	'FORUM_INDEX'	=> '討論區首頁',
 	'FORUM_LINK'	=> '版面連結',
@@ -450,6 +450,7 @@ $lang = array_merge($lang, array(
 	'POST_TIME'	=> '發表時間 ',
 	'POST_TOPIC'	=> '發表新主題',
 	'POST_UNAPPROVED'	=> '這篇文章正在等待審核',
+	'POWERED_BY'			=> 'Powered by %s',
 	'PREVIEW'	=> '預覽',
 	'PREVIOUS'	=> '上一頁',
 	'PREVIOUS_STEP'	=> '上一步',
@@ -459,6 +460,7 @@ $lang = array_merge($lang, array(
 	'PRIVATE_MESSAGING'	=> '私人訊息',
 	'PROFILE'	=> '會員控制台 (UCP)',
 
+	'RANK'						=> '等級',
 	'READING_FORUM'	=> '正在檢視 %s 版面的主題',
 	'READING_GLOBAL_ANNOUNCE'	=> '檢視全域公告',
 	'READING_LINK'	=> '下面的版面連結 %s',
@@ -615,7 +617,7 @@ $lang = array_merge($lang, array(
 	'TOO_SHORT_EMAIL_CONFIRM'	=> '您輸入的確認 e-mail 位址太短了。',
 	'TOO_SHORT_WEBSITE'	=> '您輸入的網站位址太短了。',
 	'TOO_SHORT_YIM'	=> '您輸入的 Yahoo！ Messenger 會員名稱太短了。',
-
+	
 	'TOO_SMALL'                  => '您輸入的值太小。',
 	'TOO_SMALL_MAX_RECIPIENTS'      => '這個 <strong>每個私人訊息所允許的最大收件人數</strong> 設定，您輸入的值太小。',
 

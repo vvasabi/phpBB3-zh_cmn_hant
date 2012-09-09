@@ -59,7 +59,7 @@ $lang = array_merge($lang, array(
 
 	'DELETE_POSTS'	=> '刪除文章',
 	'DELETE_USER'	=> '刪除會員',
-	'DELETE_USER_EXPLAIN'	=> '請注意！ 刪除會員是最後的手段，他們不能恢復',
+	'DELETE_USER_EXPLAIN'	=> '請注意！ 刪除會員是最後的手段，他們不能恢復。該會員發送的未讀之私人信息將被刪除，並不會提供給收件者。',
 
 	'FORCE_REACTIVATION_SUCCESS'	=> '強迫再啟用成功。',
 	'FOUNDER'						=> '創始人',
@@ -124,6 +124,7 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_SPECIAL'			=> '特殊群組的會員',
 	'USER_LIFTED_NR'				=> '已成功移除會員的新註冊會員身份。',
 	'USER_NO_ATTACHMENTS'			=> '沒有可顯示的附加檔案。',
+	'USER_NO_POSTS_TO_DELETE'			=> '沒有文章要保留或刪除。',
 	'USER_OUTBOX_EMPTIED'			=> '已成功清空會員的 PM 寄件夾。',
 	'USER_OUTBOX_EMPTY'				=> '會員的 PM 寄件夾已經清空。',
 	'USER_OVERVIEW_UPDATED'			=> '會員細節更新成功。',
