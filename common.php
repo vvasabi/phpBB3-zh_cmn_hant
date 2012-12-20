@@ -905,9 +905,5 @@ $lang = array_merge($lang, array(
 	'USE_BBCODE'			=> '使用 BBCode',
 	'USE_WIKI'				=> '使用 Wiki 語法',
 	'FORUM_POSTING_RULES'	=> '版面發文規定',
-
-	// add phrases
-	'SPONSOR'				=> '贊助商：'
 ));
 
-?>
